@@ -1,0 +1,6 @@
+https://wikiserver/partners/tiki-index.php?page=Standard+Source+Hotfix#_Version_4_14SP1---------------------------source
+https://wikiserver/partners/tiki-index.php?page=Standard+Benefits+Hotfix#_Benefits_Version_4_14SP3--------------------benefits merge
+https://wikiserver/partners/tiki-index.php?page=Standard+Accruals+Hotfix#_Accruals_Version_4_15------------------Acurals merge
+
+
+1st then standard hotfix> select what ever you want

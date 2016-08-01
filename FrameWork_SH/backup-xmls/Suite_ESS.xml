@@ -1,0 +1,257 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite ESS" allow-return-values="true">
+
+
+
+<test name="ESS_AddModifyEduInfo" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_AddModifyEduInfo" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_ModifyEducation" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_ModifyEducation" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_AddLanguages" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_AddLanguages" ></class>  
+    </classes>
+</test>
+<test name="ESS_AddLanguages_Negative" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_AddLanguages_Negative" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_AlternativeAddress" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_AlternativeAddress" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_GetsDivorced" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_GetsDivorced" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_GetsMarried" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_GetsMarried" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_HasBaby" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_HasBaby" ></class>  
+    </classes>
+</test>
+
+
+<test name="ESS_HasCivilUnion" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_HasCivilUnion" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_HasStepChild" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_HasStepChild" ></class>  
+    </classes>
+</test>
+
+
+<test name="ESS_ReplacePrimAddress">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_ReplacePrimAddress" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_RevisesAddress" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_RevisesAddress" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_Widowed" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_Widowed" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_AddModifyEduInfo_Auth" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_AddModifyEduInfo_Auth" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_ModifyEducation_Auth" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_ModifyEducation_Auth" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_CourseView" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_CourseView" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_ViewClassNeeds" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_ViewClassNeeds" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_ClassEnrollment" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_ClassEnrollment" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_ClassCancel" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_ClassCancel" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_AddressChange_Chg_HRAdminGroupValue" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_AddressChange_Chg_HRAdminGroupValue" ></class>  
+    </classes>
+</test>
+
+<test name="ESS_HasBaby_Auth_WithoutAndWithSupervisor" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_HasBaby_Auth_WithoutAndWithSupervisor" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_RequestTimeOff_SingleDay" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_RequestTimeOff_SingleDay" ></class>  
+    </classes> 
+</test>
+<test name="ESS_RequestTimeOff_MultiDay" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_RequestTimeOff_MultiDay" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_RequestTimeOff_SupervisorApproves_HRRejects" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_RequestTimeOff_SupervisorApproves_HRRejects" ></class>  
+    </classes> 
+</test>
+<test name="ESS_RequestTimeOff_IndependentofTimeAccruals" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_RequestTimeOff_IndependentofTimeAccruals" ></class>  
+    </classes> 
+</test>
+<test name="ESS_RequestTimeOfftobeCancelled" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_RequestTimeOfftobeCancelled" ></class>  
+    </classes> 
+</test>
+<test name="ESS_RequestTimeOff_AuthorizationwithoutSupervisor" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_RequestTimeOff_AuthorizationwithoutSupervisor" ></class>  
+    </classes> 
+</test>
+<test name="ESS_RequestTimeOff_DependentOnAccural" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_RequestTimeOff_DependentOnAccural" ></class>  
+    </classes> 
+</test>
+<test name="ESS_RequestTimeOff_NotEnoughHours" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_RequestTimeOff_NotEnoughHours" ></class>  
+    </classes> 
+</test>
+<test name="ESS_TracksTimeOffagainstTimeSheet" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_TracksTimeOffagainstTimeSheet" ></class>  
+    </classes> 
+</test>
+<test name="ESS_UploadDocument" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_UploadDocument" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_DeleteDocument" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_DeleteDocument" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_AllowManagersToViewTheField" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_AllowManagersToViewTheField" ></class>  
+    </classes> 
+</test>
+<test name="ESS_DisAllowManagersToViewTheField" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_DisAllowManagersToViewTheField" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_ViewTheAuthorizationTrace" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_ViewTheAuthorizationTrace" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_ShowingAllAuthorizationsInReadOnlyFormat" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_ShowingAllAuthorizationsInReadOnlyFormat" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_TriggersLetterViaAuthRequest" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_TriggersLetterViaAuthRequest" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_TriggersLetterViaEventTriggers" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_TriggersLetterViaEventTriggers" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_SendsLetterFromDraftMailbox" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_SendsLetterFromDraftMailbox" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_ReSendsLetterFromSentMailbox" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_ReSendsLetterFromSentMailbox" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_DeleteLettersFromMailBox" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_DeleteLettersFromMailBox" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_SubmitsDirectDepositToPayrollAdmin_Approve" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_SubmitsDirectDepositToPayrollAdmin_Approve" ></class>  
+    </classes> 
+</test>
+
+<test name="ESS_SubmitsDirectDepositToPayrollAdmin_Reject" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteESS.ESS_SubmitsDirectDepositToPayrollAdmin_Reject" ></class>  
+    </classes> 
+</test>
+
+</suite>
+

@@ -1,0 +1,4 @@
+cd\
+appium &
+
+pause

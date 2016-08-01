@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="QA-SAHAMED1" id="0" name="TestNGRunner" package="com.nuview.runner" tests="1" time="1.283" timestamp="19 Jun 2014 09:48:09 GMT">
+      <testcase classname="com.nuview.runner.TestNGRunner" name="triggertestNGXMLrunner" time="1.283" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="QA-SAHAMED1" id="1" name="MST_CT_Company_Inactive" package="com.nuview.suiteMasterData" tests="1" time="99.672" timestamp="19 Jun 2014 09:50:16 GMT">
+      <testcase classname="com.nuview.suiteMasterData.MST_CT_Company_Inactive" name="TestMST_CT_Company_Inactive" time="99.672" />
+
+  </testsuite>
+</testsuites>

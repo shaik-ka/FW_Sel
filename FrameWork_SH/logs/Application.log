@@ -1,0 +1,143 @@
+19/06/2014 15:18:11 devpinoyLogger Loading CONFIG.Properties file..
+19/06/2014 15:18:11 devpinoyLogger Loaded CONFIG.Properties file..
+19/06/2014 15:18:11 devpinoyLogger Loading OR.Properties file..
+19/06/2014 15:18:11 devpinoyLogger Loaded CONFIG.Properties file..
+19/06/2014 15:18:11 devpinoyLogger Loading XL files..
+19/06/2014 15:18:12 devpinoyLogger Loaded XL files..
+19/06/2014 15:18:12 devpinoyLogger IsMSS is initialized as True
+19/06/2014 15:18:12 devpinoyLogger Result File Found : D:\NuviewWorkSpace\Selenium_Trunk_Apr24_MSS\Results\Sel-Results_20140619151812.xls
+19/06/2014 15:18:13 devpinoyLogger Checking the run mode of Suite MasterData Suite..
+19/06/2014 15:18:13 devpinoyLogger the run mode of Suite MasterData Suite is yes..
+19/06/2014 15:18:13 devpinoyLogger Creating commonFunctions instance...
+19/06/2014 15:18:16 devpinoyLogger launching the chrome browser
+19/06/2014 15:18:20 devpinoyLogger launching the AUT http://qa-sahamed1/472/
+19/06/2014 15:18:20 devpinoyLogger starting before test of MST_CT_Company_Inactive
+19/06/2014 15:18:20 devpinoyLogger Verifying the test caseMST_CT_Company_Inactive run mode..
+19/06/2014 15:18:20 devpinoyLogger the run mode of Test case: MST_CT_Company_Inactive is yes,hence executing further steps..
+19/06/2014 15:18:21 devpinoyLogger connection established to the datase Nu472now has to fetch the require data
+19/06/2014 15:18:24 devpinoyLogger Before test of MST_CT_Company_Inactive
+19/06/2014 15:18:24 devpinoyLogger DataProvider Fetch start for testcase:-MST_CT_Company_Inactive
+19/06/2014 15:18:24 devpinoyLogger the testcase-MST_CT_Company_Inactive is fetchable so execute_dataTable now
+19/06/2014 15:18:24 devpinoyLogger DataProvider-execute_dataTable:Fetching data flag of test case MST_CT_Company_Inactive is DB
+19/06/2014 15:18:24 devpinoyLogger connection established to the datase Nu472now has to fetch the require data
+19/06/2014 15:18:24 devpinoyLogger MST_CT_Company_Inactive-DB Data Provider data-[[Ljava.lang.Object;@567ee063
+19/06/2014 15:18:24 devpinoyLogger Returned Data from Execute_dataTable : DataProvider for the test case:-MST_CT_Company_Inactive return data is [[Ljava.lang.Object;@567ee063
+19/06/2014 15:18:24 devpinoyLogger Driver already initialized...
+19/06/2014 15:18:44 devpinoyLogger After binding By element , Unable to wait for the element visibilty of  //h1[text()='Your user session has timed out for security reasons. Please refresh the browser to go back to the Login form.'] due to error->org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of element located by By.xpath: //h1[text()='Your user session has timed out for security reasons. Please refresh the browser to go back to the Login form.']
+Build info: version: '2.39.0', revision: 'ff23eac', time: '2013-12-16 16:11:32'
+System info: host: 'QA-SAHAMED1', ip: '10.80.1.80', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_21'
+Driver info: driver.version: unknown
+19/06/2014 15:18:45 devpinoyLogger Before switchLoginFrameFrmDefault
+19/06/2014 15:18:45 devpinoyLogger Sucessfully switched to default frame..Next is login frame..
+19/06/2014 15:18:45 devpinoyLogger Successfully returned the Object login
+19/06/2014 15:18:45 devpinoyLogger Sucessfully switched to login frame..
+19/06/2014 15:18:46 devpinoyLogger Successfully returned the Object N_User_main_1
+19/06/2014 15:18:47 devpinoyLogger Able to locate and element is visible..N_User_main_1
+19/06/2014 15:18:47 devpinoyLogger MST_CT_Company_Inactive--> N_User_main_1 exists and the value entered is nvsuperuser1
+19/06/2014 15:18:47 devpinoyLogger Able to locate and element is visible..N_Pswd_main_1
+19/06/2014 15:18:48 devpinoyLogger MST_CT_Company_Inactive--> N_Pswd_main_1 exists and the value entered is nuview
+19/06/2014 15:18:48 devpinoyLogger Able to locate and element is visible..N_Login_main_1
+19/06/2014 15:18:52 devpinoyLogger MST_CT_Company_Inactive-->N_Login_main_1 exists and clicked 
+19/06/2014 15:18:52 devpinoyLogger Started get Page source..
+19/06/2014 15:18:53 devpinoyLogger Page source is loaded..
+19/06/2014 15:18:53 devpinoyLogger HR/MSS/ESS-Landing Page Loaded successfully..
+19/06/2014 15:18:53 devpinoyLogger Verifying landing page ...
+19/06/2014 15:18:53 devpinoyLogger The Replaced string is--Select sec.Emp as ESSEmp,rolee.Rol from Emp emp  INNER JOIN Sec sec on sec.Emp=emp.Emp   INNER JOIN secRol rolee on sec.sec=rolee.sec  AND Sec.isactive='1'   WHERE rolee.Rol ='ESS' and sec.Emp not in(select distinct emp.Emp from Emp emp inner join Sec sec on sec.emp=emp.emp inner join SecRol role on role.Sec=sec.sec  WHERE role.Rol !='ESS')  AND sec.Sec='nvsuperuser1'  GROUP BY SEC.emp,rolee.Rol HAVING count(rolee.Rol)<2 
+19/06/2014 15:18:53 devpinoyLogger connection established to the datase Nu472now has to fetch the require data
+19/06/2014 15:18:56 devpinoyLogger connection established to the datase Nu472now has to fetch the require data
+19/06/2014 15:18:58 devpinoyLogger The Replaced string is--Select sec.Sec,role.Rol from Emp emp  INNER JOIN Sec sec on sec.Emp=emp.Emp  INNER JOIN secRol role on sec.sec=role.sec  WHERE sec.Sec='nvsuperuser1'  And role.Rol='MSS'
+19/06/2014 15:18:58 devpinoyLogger connection established to the datase Nu472now has to fetch the require data
+19/06/2014 15:19:01 devpinoyLogger The system verison is Greater and current user-nvsuperuser1 landing page is MSS
+19/06/2014 15:19:01 devpinoyLogger The Replaced string is--Select sec.Sec,role.Rol from Emp emp  INNER JOIN Sec sec on sec.Emp=emp.Emp  INNER JOIN secRol role on sec.sec=role.sec  WHERE sec.Sec='nvsuperuser1'  And role.Rol='MSS'
+19/06/2014 15:19:01 devpinoyLogger connection established to the datase Nu472now has to fetch the require data
+19/06/2014 15:19:04 devpinoyLogger The system verison is Greater and current user-nvsuperuser1 landing page is MSS but HR Menu option should be available
+19/06/2014 15:19:04 devpinoyLogger The current user nvsuperuser1 landing page is MSS..
+19/06/2014 15:19:04 devpinoyLogger New Version and Current landing page is MSS
+19/06/2014 15:19:04 devpinoyLogger Able to locate and element is visible..//div[text()='Executive']
+19/06/2014 15:19:04 devpinoyLogger MSS-Landing Page Loaded successfully..
+19/06/2014 15:19:04 devpinoyLogger Able to locate and element is visible..//a[text()=' Human Resources']
+19/06/2014 15:19:12 devpinoyLogger ******************************************************
+19/06/2014 15:19:12 devpinoyLogger Executing the test case: MST_CT_Company_Inactive
+19/06/2014 15:19:12 devpinoyLogger fetchExcelobjects method triggred for test case:MST_CT_Company_Inactive
+19/06/2014 15:19:12 devpinoyLogger Before switchToFrameFromDefault
+19/06/2014 15:19:12 devpinoyLogger Sucessfully switched to default frame..Next is login frame..
+19/06/2014 15:19:12 devpinoyLogger Successfully returned the Object login
+19/06/2014 15:19:12 devpinoyLogger Sucessfully switched to login from default frame..Next is nav frame..
+19/06/2014 15:19:12 devpinoyLogger Successfully returned the Object nav
+19/06/2014 15:19:12 devpinoyLogger Sucessfully switched to nav frame..
+19/06/2014 15:19:13 devpinoyLogger Successfully returned the Object TabTitle_Menu_More
+19/06/2014 15:19:14 devpinoyLogger TabTitle_Menu_More isDisplayed is-false
+19/06/2014 15:19:14 devpinoyLogger Now  Module clicking..TabTitle_Menu_CommonTables
+19/06/2014 15:19:14 devpinoyLogger FindObjectAndClick_New: Now clicking..TabTitle_Menu_CommonTables
+19/06/2014 15:19:15 devpinoyLogger Able to locate and element is visible..TabTitle_Menu_CommonTables
+19/06/2014 15:19:15 devpinoyLogger FindObjectAndClick_New: Successfully Clicked the element:-TabTitle_Menu_CommonTables
+19/06/2014 15:19:15 devpinoyLogger Clicked  Modules ..TabTitle_Menu_CommonTables
+19/06/2014 15:19:15 devpinoyLogger Now Submodules...//div[@id='Tab_Menu_CommonTables']/div[3]/div/span[text()='Employment']
+19/06/2014 15:19:15 devpinoyLogger Only one Submodule..
+19/06/2014 15:19:15 devpinoyLogger FindObjectAndClick_New: Now clicking..//div[@id='Tab_Menu_CommonTables']/div[3]/div/span[text()='Employment']
+19/06/2014 15:19:15 devpinoyLogger Able to locate and element is visible..//div[@id='Tab_Menu_CommonTables']/div[3]/div/span[text()='Employment']
+19/06/2014 15:19:15 devpinoyLogger FindObjectAndClick_New: Successfully Clicked the element:-//div[@id='Tab_Menu_CommonTables']/div[3]/div/span[text()='Employment']
+19/06/2014 15:19:17 devpinoyLogger Now Screen to click..
+19/06/2014 15:19:17 devpinoyLogger FindObjectAndClick_New: Now clicking..C_Cmp_main_1
+19/06/2014 15:19:17 devpinoyLogger Able to locate and element is visible..C_Cmp_main_1
+19/06/2014 15:19:17 devpinoyLogger FindObjectAndClick_New: Successfully Clicked the element:-C_Cmp_main_1
+19/06/2014 15:19:17 devpinoyLogger Successfully clicked Screen..
+19/06/2014 15:19:17 devpinoyLogger Before switchToFrameFromDefault
+19/06/2014 15:19:17 devpinoyLogger Sucessfully switched to default frame..Next is login frame..
+19/06/2014 15:19:17 devpinoyLogger Successfully returned the Object login
+19/06/2014 15:19:17 devpinoyLogger Sucessfully switched to login from default frame..Next is dsp frame..
+19/06/2014 15:19:17 devpinoyLogger Successfully returned the Object dsp
+19/06/2014 15:19:17 devpinoyLogger Sucessfully switched to dsp frame..
+19/06/2014 15:19:18 devpinoyLogger connection established to the datase Nu472now has to fetch the require data
+19/06/2014 15:19:21 devpinoyLogger Able to locate and element is visible..//table[@summary='datasheet']
+19/06/2014 15:19:21 devpinoyLogger Able to locate table:-//table[@summary='datasheet']
+19/06/2014 15:19:22 devpinoyLogger Table-//table[@summary='datasheet']has 5 number of rows
+19/06/2014 15:19:22 devpinoyLogger Table- RowNumber-row Data:-Company Input Data:-NuView Systems
+19/06/2014 15:19:22 devpinoyLogger Table- RowNumber-row Data:-IGS Input Data:-NuView Systems
+19/06/2014 15:19:23 devpinoyLogger Table- RowNumber-row Data:-NuCo Input Data:-NuView Systems
+19/06/2014 15:19:23 devpinoyLogger Table- RowNumber-row Data:-NuView Systems Input Data:-NuView Systems
+19/06/2014 15:19:24 devpinoyLogger Table-Expected-NuView Systems
+19/06/2014 15:19:25 devpinoyLogger Number of links for the expected actionPerform Column is1
+19/06/2014 15:19:25 devpinoyLogger About to click...
+19/06/2014 15:19:25 devpinoyLogger About to click...NuView Systems
+19/06/2014 15:19:25 devpinoyLogger About to click...[[[[[[[[ChromeDriver: chrome on XP (7827dd02052b44addebdf5dc45fe63bb)] -> xpath: //table[@summary='datasheet']]] -> tag name: tr]] -> tag name: td]] -> tag name: span]
+19/06/2014 15:19:28 devpinoyLogger Able to locate and element is visible..N_IsInActive_main_1
+19/06/2014 15:19:28 devpinoyLogger Able to locate and element is visible..C_Save_Img
+19/06/2014 15:19:29 devpinoyLogger MST_CT_Company_Inactive-->C_Save_Img exists and clicked 
+19/06/2014 15:19:30 devpinoyLogger connection established to the datase Nu472now has to fetch the require data
+19/06/2014 15:19:33 devpinoyLogger Able to locate and element is visible..//table[@summary='datasheet']
+19/06/2014 15:19:33 devpinoyLogger Able to locate table:-//table[@summary='datasheet']
+19/06/2014 15:19:34 devpinoyLogger Table-//table[@summary='datasheet']has 5 number of rows
+19/06/2014 15:19:34 devpinoyLogger Table- RowNumber-row Data:-Company Input Data:-NuView Systems
+19/06/2014 15:19:34 devpinoyLogger Table- RowNumber-row Data:-IGS Input Data:-NuView Systems
+19/06/2014 15:19:34 devpinoyLogger Table- RowNumber-row Data:-NuCo Input Data:-NuView Systems
+19/06/2014 15:19:34 devpinoyLogger Table- RowNumber-row Data:-NuView Systems Input Data:-NuView Systems
+19/06/2014 15:19:35 devpinoyLogger Table-Expected-NuView Systems
+19/06/2014 15:19:36 devpinoyLogger Number of links for the expected actionPerform Column is1
+19/06/2014 15:19:36 devpinoyLogger About to click...
+19/06/2014 15:19:36 devpinoyLogger About to click...NuView Systems
+19/06/2014 15:19:36 devpinoyLogger About to click...[[[[[[[[ChromeDriver: chrome on XP (7827dd02052b44addebdf5dc45fe63bb)] -> xpath: //table[@summary='datasheet']]] -> tag name: tr]] -> tag name: td]] -> tag name: span]
+19/06/2014 15:19:39 devpinoyLogger Able to locate and element is visible..N_IsInActive_main_1
+19/06/2014 15:19:40 devpinoyLogger Able to locate and element is visible..C_Save_Img
+19/06/2014 15:19:40 devpinoyLogger MST_CT_Company_Inactive-->C_Save_Img exists and clicked 
+19/06/2014 15:19:40 devpinoyLogger Individual-MST_CT_Company_Inactive -testresulttrue
+19/06/2014 15:19:40 devpinoyLogger Aft method MST_CT_Company_Inactive
+19/06/2014 15:19:40 devpinoyLogger  The Application is in new version..
+19/06/2014 15:19:40 devpinoyLogger Started get Page source..
+19/06/2014 15:19:40 devpinoyLogger Page source is loaded..
+19/06/2014 15:20:00 devpinoyLogger After binding By element , Unable to wait for the element visibilty of  logout due to error->org.openqa.selenium.TimeoutException: Timed out after 2 seconds waiting for visibility of element located by By.id: logout
+Build info: version: '2.39.0', revision: 'ff23eac', time: '2013-12-16 16:11:32'
+System info: host: 'QA-SAHAMED1', ip: '10.80.1.80', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_21'
+Driver info: driver.version: unknown
+19/06/2014 15:20:00 devpinoyLogger Successfully returned the Object bnr
+19/06/2014 15:20:00 devpinoyLogger Sucessfully switched to bnr frame..
+19/06/2014 15:20:01 devpinoyLogger Able to locate and element is visible..logout
+19/06/2014 15:20:01 devpinoyLogger MST_CT_Company_Inactive-->logout exists and clicked 
+19/06/2014 15:20:04 devpinoyLogger The Replaced string is--Select IsInActive from cmp where requiredField='value' and IsInActive='1'
+19/06/2014 15:20:04 devpinoyLogger The Replaced string is--Select IsInActive from cmp where cmp='value' and IsInActive='1'
+19/06/2014 15:20:04 devpinoyLogger The Replaced string is--Select IsInActive from cmp where cmp='NuView Systems' and IsInActive='1'
+19/06/2014 15:20:04 devpinoyLogger connection established to the datase Nu472now has to fetch the require data
+19/06/2014 15:20:07 devpinoyLogger MST_CT_Company_Inactive result in the excel sheet is marked as Pass
+19/06/2014 15:20:11 devpinoyLogger MST_CT_Company_Inactive -Assert Status is true
+19/06/2014 15:20:11 devpinoyLogger MST_CT_Company_Inactive -Verifying the Assert Status..true
+19/06/2014 15:20:14 devpinoyLogger Closing the browser 

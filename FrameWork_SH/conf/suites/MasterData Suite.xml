@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MasterData Suite">
+  <test name="MST_CT_Company_Inactive">
+    <classes>
+      <class name="com.nuview.suiteMasterData.MST_CT_Company_Inactive"/>
+    </classes>
+  </test> <!-- MST_CT_Company_Inactive -->
+</suite> <!-- MasterData Suite -->

@@ -1,0 +1,288 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite MasterData" allow-return-values="true">
+
+
+<test name="MST_CT_Company" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Company" ></class>  
+    </classes>
+</test>
+
+<test name="MST_CT_Company_Inactive" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Company_Inactive" ></class>  
+    </classes>
+</test>
+
+<test name="MST_CT_Division" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Division" ></class>  
+    </classes>
+</test>
+
+<test name="MST_CT_Division_Inactive" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Division_Inactive" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_Department" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Department" ></class>  
+    </classes>
+</test>
+
+<test name="MST_CT_Department_Inactive" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Department_Inactive" ></class>  
+    </classes>
+</test>
+
+<test name="MST_CT_Location" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Location" ></class>  
+    </classes>
+</test>
+
+<test name="MST_CT_Location_Inactive" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Location_Inactive" ></class>  
+    </classes>
+</test>
+
+<test name="MST_CT_Organization" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Organization" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_Organization_Inactive" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Organization_Inactive" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_Units" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Units" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_Units_Inactive" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Units_Inactive" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_Job" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Job" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_Job_Inactive" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Job_Inactive" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_Entity" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Entity" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_Entity_Inactive" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Entity_Inactive" ></class>  
+    </classes>
+</test>
+
+<test name="MST_CT_SkillLevels" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_SkillLevels" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_SkillCategories" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_SkillCategories" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_Skills" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_Skills" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_PositionSupervisory" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_PositionSupervisory" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_PositionSupervisory_Inactive" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_PositionSupervisory_Inactive" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_PositionESS" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_PositionESS" ></class>  
+    </classes>
+</test>
+
+<test name="MST_REC_Requisition" allow-return-values="true">
+	 <classes>
+        <class name="com.nuview.suiteMasterData.MST_REC_Requisition" ></class>  
+    </classes>
+
+ </test>
+ 
+<test name="MST_HR_NewHireESS" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_HR_NewHireESS" ></class>  
+    </classes>
+</test>
+
+<test name="MST_HR_NewHireMSS" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_HR_NewHireMSS" ></class>  
+    </classes>
+</test>
+<test name="MST_HR_NewHireMutipleAdmins" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_HR_NewHireMutipleAdmins" ></class>  
+    </classes>
+</test>
+
+<test name="MST_SYS_SetupDataPrivacyFields" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_SYS_SetupDataPrivacyFields" ></class>  
+    </classes>
+</test>
+
+<test name="MST_TA_AbsenceCategories" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_TA_AbsenceCategories" ></class>  
+    </classes>
+</test>
+
+<test name="MST_TA_TimeSheetActivities" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_TA_TimeSheetActivities" ></class>  
+    </classes>
+</test>
+
+<test name="MST_TA_TimeAccurals" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_TA_TimeAccurals" ></class>  
+    </classes>
+</test>
+<test name="MST_TA_TimeSheetGroup" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_TA_TimeSheetGroup" ></class>  
+    </classes>
+</test>
+
+<test name="MST_BEN_AddInvestmentPlan" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_BEN_AddInvestmentPlan" ></class>  
+    </classes>
+</test>
+
+<test name="MST_TR_CourseAdd" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_TR_CourseAdd" ></class>  
+    </classes>
+</test>
+
+<test name="MST_TR_ClassAdd" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_TR_ClassAdd" ></class>  
+    </classes>
+</test>
+
+<test name="MST_RPT_AddLetter" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_RPT_AddLetter" ></class>  
+    </classes>
+</test>
+
+<test name="MST_SYS_AuthRule" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_SYS_AuthRule" ></class>  
+    </classes>
+</test>
+
+<test name="MST_SYS_Hierarchy" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_SYS_Hierarchy" ></class>  
+    </classes>
+</test>
+
+<test name="MST_SYS_Notification" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_SYS_Notification" ></class>  
+    </classes>
+</test>
+
+<test name="MST_SYS_AssigningAuthPropertyToForm" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_SYS_AssigningAuthPropertyToForm" ></class>  
+    </classes>
+</test>
+
+<test name="MST_PRF_PerformanceGroup" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_PRF_PerformanceGroup" ></class>  
+    </classes>
+</test>
+<test name="MST_PRF_BusinessEntityGoals" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_PRF_BusinessEntityGoals" ></class>  
+    </classes>
+</test>
+<test name="MST_PRF_PerformanceFactor" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_PRF_PerformanceFactor" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_JobGroups" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_JobGroups" ></class>  
+    </classes>
+</test>
+<test name="MST_CT_JobEEO" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CT_JobEEO" ></class>  
+    </classes>
+</test>
+
+<test name="MST_CMP_PayGrades" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CMP_PayGrades" ></class>  
+    </classes>
+</test>
+
+<test name="MST_PRF_PerformanceComponentModel" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_PRF_PerformanceComponentModel" ></class>  
+    </classes>
+</test>
+<test name="MST_PYR_AddDirectDeposit" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_PYR_AddDirectDeposit" ></class>  
+    </classes>
+</test>
+<test name="MST_CMP_CompensationGroup" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CMP_CompensationGroup" ></class>  
+    </classes>
+</test>
+<test name="MST_CMP_CompensationPlan" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CMP_CompensationPlan" ></class>  
+    </classes>
+</test>
+<test name="MST_SYS_EventTrigger" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_SYS_EventTrigger" ></class>  
+    </classes>
+</test>
+<test name="MST_CMP_EstablishBaseLineRecords" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMasterData.MST_CMP_EstablishBaseLineRecords" ></class>  
+    </classes>
+</test>
+</suite>
+

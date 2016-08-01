@@ -1,0 +1,1686 @@
+29/08/2013 23:25:31 devpinoyLogger Loading CONFIG.Properties file..
+29/08/2013 23:25:31 devpinoyLogger Loaded CONFIG.Properties file..
+29/08/2013 23:25:31 devpinoyLogger Loading OR.Properties file..
+29/08/2013 23:25:31 devpinoyLogger Loaded CONFIG.Properties file..
+29/08/2013 23:25:31 devpinoyLogger Loading XL files..
+29/08/2013 23:25:32 devpinoyLogger Loaded XL files..
+29/08/2013 23:25:32 devpinoyLogger Checking the run mode of Suite MasterData Suite..
+29/08/2013 23:25:32 devpinoyLogger As the run mode of the Suite MasterData Suite is set to NO .. Hence skipping all the test cases under the suite
+29/08/2013 23:25:32 devpinoyLogger Checking the run mode of Suite HR Suite..
+29/08/2013 23:25:32 devpinoyLogger the run mode of Suite HR Suite is yes..
+29/08/2013 23:25:32 devpinoyLogger Creating commonFunctions instance...
+29/08/2013 23:25:36 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:36 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:36 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:36 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:36 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:36 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:36 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:36 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:36 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:36 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:36 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:36 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session HTTP/1.1
+29/08/2013 23:25:36 org.apache.http.wire >> "POST /session HTTP/1.1[\r][\n]"
+29/08/2013 23:25:36 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:36 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:36 org.apache.http.wire >> "Content-Length: 119[\r][\n]"
+29/08/2013 23:25:36 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:36 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:36 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:36 org.apache.http.headers >> POST /session HTTP/1.1
+29/08/2013 23:25:36 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:36 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:36 org.apache.http.headers >> Content-Length: 119
+29/08/2013 23:25:36 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:36 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:36 org.apache.http.wire >> "{"desiredCapabilities":{"platform":"WINDOWS","ensureCleanSession":true,"browserName":"internet explorer","version":""}}"
+29/08/2013 23:25:45 org.apache.http.wire << "HTTP/1.1 303 See Other[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire << "Location: /session/1b36f682-d0ea-4f83-85f9-9f88964e9253[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire << "Content-Type: text/html[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire << "Content-Length: 0[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 303 See Other
+29/08/2013 23:25:45 org.apache.http.headers << HTTP/1.1 303 See Other
+29/08/2013 23:25:45 org.apache.http.headers << Location: /session/1b36f682-d0ea-4f83-85f9-9f88964e9253
+29/08/2013 23:25:45 org.apache.http.headers << Content-Type: text/html
+29/08/2013 23:25:45 org.apache.http.headers << Content-Length: 0
+29/08/2013 23:25:45 org.apache.http.impl.client.DefaultHttpClient Connection can be kept alive indefinitely
+29/08/2013 23:25:45 org.apache.http.impl.client.DefaultRedirectStrategy Redirect requested to location '/session/1b36f682-d0ea-4f83-85f9-9f88964e9253'
+29/08/2013 23:25:45 org.apache.http.impl.client.DefaultHttpClient Redirecting to 'http://localhost:18618/session/1b36f682-d0ea-4f83-85f9-9f88964e9253' via {}->http://localhost:18618
+29/08/2013 23:25:45 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:45 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:45 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:45 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:45 org.apache.http.impl.client.DefaultHttpClient Attempt 2 to execute request
+29/08/2013 23:25:45 org.apache.http.impl.conn.DefaultClientConnection Sending request: GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253 HTTP/1.1
+29/08/2013 23:25:45 org.apache.http.wire >> "GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253 HTTP/1.1[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.headers >> GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253 HTTP/1.1
+29/08/2013 23:25:45 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:45 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:45 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:45 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:45 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62294<->127.0.0.1:18618 closed
+29/08/2013 23:25:45 org.apache.http.impl.client.DefaultHttpClient Closing the connection.
+29/08/2013 23:25:45 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62294<->127.0.0.1:18618 closed
+29/08/2013 23:25:45 org.apache.http.impl.client.DefaultHttpClient I/O exception (java.net.SocketException) caught when processing request: Software caused connection abort: recv failed
+29/08/2013 23:25:45 org.apache.http.impl.client.DefaultHttpClient Software caused connection abort: recv failed
+java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281)
+	at org.apache.http.impl.conn.LoggingSessionInputBuffer.readLine(LoggingSessionInputBuffer.java:115)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:712)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:184)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:174)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:143)
+	at com.nuview.library.commonFunctions.launchBrowser(commonFunctions.java:94)
+	at com.nuview.suiteHR.TestSuiteBase.checkSuiteSkip(TestSuiteBase.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+29/08/2013 23:25:45 org.apache.http.impl.client.DefaultHttpClient Retrying request
+29/08/2013 23:25:45 org.apache.http.impl.client.DefaultHttpClient Reopening the direct connection.
+29/08/2013 23:25:45 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:45 org.apache.http.impl.client.DefaultHttpClient Attempt 3 to execute request
+29/08/2013 23:25:45 org.apache.http.impl.conn.DefaultClientConnection Sending request: GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253 HTTP/1.1
+29/08/2013 23:25:45 org.apache.http.wire >> "GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253 HTTP/1.1[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.headers >> GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253 HTTP/1.1
+29/08/2013 23:25:45 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:45 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:45 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:45 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:45 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire << "Content-Length: 521[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:45 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:45 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:45 org.apache.http.headers << Content-Length: 521
+29/08/2013 23:25:45 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:45 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:45 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:45 org.apache.http.headers << Connection: close
+29/08/2013 23:25:45 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"browserAttachTimeout":0,"browserName":"internet explorer","cssSelectorsEnabled":true,"elementScrollBehavior":0,"enableElementCacheCleanup":true,"enablePersistentHover":true,"handlesAlerts":true,"ignoreProtectedModeSettings":false,"ignoreZoomSetting":false,"initialBrowserUrl":"","javascriptEnabled":true,"nativeEvents":true,"platform":"WINDOWS","requireWindowFocus":false,"takesScreenshot":true,"unexpectedAlertBehaviour":"dismiss","version":"9"}}[\n]"
+29/08/2013 23:25:45 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62299<->127.0.0.1:18618 shut down
+29/08/2013 23:25:45 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:45 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:45 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62299<->127.0.0.1:18618 closed
+29/08/2013 23:25:45 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:46 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:46 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:46 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:46 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:46 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:46 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:46 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/window/current/maximize HTTP/1.1
+29/08/2013 23:25:46 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/window/current/maximize HTTP/1.1[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "Content-Length: 26[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/window/current/maximize HTTP/1.1
+29/08/2013 23:25:46 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:46 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:46 org.apache.http.headers >> Content-Length: 26
+29/08/2013 23:25:46 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:46 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:46 org.apache.http.wire >> "{"windowHandle":"current"}"
+29/08/2013 23:25:46 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:46 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:46 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:25:46 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:46 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:46 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:46 org.apache.http.headers << Connection: close
+29/08/2013 23:25:46 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:25:46 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62300<->127.0.0.1:18618 shut down
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:46 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62300<->127.0.0.1:18618 closed
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:46 devpinoyLogger launching the ie browser
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:46 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:46 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:46 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:46 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:46 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:46 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:46 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:46 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/url HTTP/1.1
+29/08/2013 23:25:46 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/url HTTP/1.1[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "Content-Length: 32[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:46 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/url HTTP/1.1
+29/08/2013 23:25:46 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:46 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:46 org.apache.http.headers >> Content-Length: 32
+29/08/2013 23:25:46 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:46 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:46 org.apache.http.wire >> "{"url":"http://10.80.1.60/417/"}"
+29/08/2013 23:25:49 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:49 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:49 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:25:49 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:49 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:49 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:49 org.apache.http.headers << Connection: close
+29/08/2013 23:25:49 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:25:49 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62301<->127.0.0.1:18618 shut down
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:49 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62301<->127.0.0.1:18618 closed
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:49 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:49 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:49 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:49 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:49 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:49 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:49 org.apache.http.impl.conn.DefaultClientConnection Sending request: GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/window_handle HTTP/1.1
+29/08/2013 23:25:49 org.apache.http.wire >> "GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/window_handle HTTP/1.1[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire >> "Cache-Control: no-cache[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.headers >> GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/window_handle HTTP/1.1
+29/08/2013 23:25:49 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:49 org.apache.http.headers >> Cache-Control: no-cache
+29/08/2013 23:25:49 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:49 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:49 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "Content-Length: 111[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:49 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:49 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:49 org.apache.http.headers << Content-Length: 111
+29/08/2013 23:25:49 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:49 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:49 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:49 org.apache.http.headers << Connection: close
+29/08/2013 23:25:49 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":"426b9658-45b6-41fb-9bc4-eee4c3d1374d"}[\n]"
+29/08/2013 23:25:49 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62308<->127.0.0.1:18618 shut down
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:49 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62308<->127.0.0.1:18618 closed
+29/08/2013 23:25:49 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:49 devpinoyLogger launching the AUT http://10.80.1.60/417/
+29/08/2013 23:25:49 devpinoyLogger starting before test of NewHireESS
+29/08/2013 23:25:49 devpinoyLogger Verifying the test caseNewHireESS run mode..
+29/08/2013 23:25:49 devpinoyLogger the run mode of Test case: NewHireESS is yes,hence executing further steps..
+29/08/2013 23:25:49 devpinoyLogger  after test of NewHireESS
+29/08/2013 23:25:49 devpinoyLogger Fetching data flag of test case NewHireESS is XL
+29/08/2013 23:25:49 devpinoyLogger NewHireESS -->\\src\\com\\nuview\\suiteHR\\testdata\\NewHireTestData-ESS.xlsx
+29/08/2013 23:25:52 devpinoyLogger Before switchLoginFrameFrmDefault
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:52 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:52 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:52 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:52 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:52 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:52 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:52 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:25:52 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "Content-Length: 11[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:25:52 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:52 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:52 org.apache.http.headers >> Content-Length: 11
+29/08/2013 23:25:52 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:52 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:52 org.apache.http.wire >> "{"id":null}"
+29/08/2013 23:25:52 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:52 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:52 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:25:52 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:52 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:52 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:52 org.apache.http.headers << Connection: close
+29/08/2013 23:25:52 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:25:52 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62309<->127.0.0.1:18618 shut down
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:52 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62309<->127.0.0.1:18618 closed
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:52 devpinoyLogger Sucessfully switched to default frame..Next is login frame..
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:52 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:52 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:52 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:52 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:52 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:52 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:52 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:52 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:25:52 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "Content-Length: 30[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:52 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:25:52 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:52 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:52 org.apache.http.headers >> Content-Length: 30
+29/08/2013 23:25:52 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:52 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:52 org.apache.http.wire >> "{"using":"id","value":"login"}"
+29/08/2013 23:25:53 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:53 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:53 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:25:53 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:53 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:53 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:53 org.apache.http.headers << Connection: close
+29/08/2013 23:25:53 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"895e150f-92f8-42a5-a7d3-007b00aaf62a"}}[\n]"
+29/08/2013 23:25:53 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62310<->127.0.0.1:18618 shut down
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:53 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62310<->127.0.0.1:18618 closed
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:53 devpinoyLogger Successfully returned the Object login
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:53 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:53 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:53 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:53 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:53 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:53 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:53 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:25:53 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire >> "Content-Length: 57[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:25:53 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:53 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:53 org.apache.http.headers >> Content-Length: 57
+29/08/2013 23:25:53 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:53 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:53 org.apache.http.wire >> "{"id":{"ELEMENT":"895e150f-92f8-42a5-a7d3-007b00aaf62a"}}"
+29/08/2013 23:25:53 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:53 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:53 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:53 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:25:53 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:53 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:53 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:53 org.apache.http.headers << Connection: close
+29/08/2013 23:25:53 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:25:53 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62311<->127.0.0.1:18618 shut down
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:53 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62311<->127.0.0.1:18618 closed
+29/08/2013 23:25:53 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:53 devpinoyLogger Sucessfully switched to login frame..
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:55 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:25:55 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Content-Length: 40[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:25:55 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:55 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:55 org.apache.http.headers >> Content-Length: 40
+29/08/2013 23:25:55 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:55 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:55 org.apache.http.wire >> "{"using":"name","value":"N_User_main_1"}"
+29/08/2013 23:25:55 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:55 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:55 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:25:55 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:55 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:55 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:55 org.apache.http.headers << Connection: close
+29/08/2013 23:25:55 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"343a7be4-f854-4ff5-b245-26dfa794e009"}}[\n]"
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62312<->127.0.0.1:18618 shut down
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62312<->127.0.0.1:18618 closed
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:55 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/343a7be4-f854-4ff5-b245-26dfa794e009/clear HTTP/1.1
+29/08/2013 23:25:55 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/343a7be4-f854-4ff5-b245-26dfa794e009/clear HTTP/1.1[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Content-Length: 45[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/343a7be4-f854-4ff5-b245-26dfa794e009/clear HTTP/1.1
+29/08/2013 23:25:55 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:55 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:55 org.apache.http.headers >> Content-Length: 45
+29/08/2013 23:25:55 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:55 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:55 org.apache.http.wire >> "{"id":"343a7be4-f854-4ff5-b245-26dfa794e009"}"
+29/08/2013 23:25:55 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:55 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:55 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:25:55 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:55 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:55 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:55 org.apache.http.headers << Connection: close
+29/08/2013 23:25:55 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62313<->127.0.0.1:18618 shut down
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62313<->127.0.0.1:18618 closed
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:55 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:55 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:55 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:55 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/343a7be4-f854-4ff5-b245-26dfa794e009/value HTTP/1.1
+29/08/2013 23:25:55 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/343a7be4-f854-4ff5-b245-26dfa794e009/value HTTP/1.1[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Content-Length: 72[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:55 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/343a7be4-f854-4ff5-b245-26dfa794e009/value HTTP/1.1
+29/08/2013 23:25:55 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:55 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:55 org.apache.http.headers >> Content-Length: 72
+29/08/2013 23:25:55 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:55 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:55 org.apache.http.wire >> "{"id":"343a7be4-f854-4ff5-b245-26dfa794e009","value":["nvsuperuser1\t"]}"
+29/08/2013 23:25:57 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:25:57 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:57 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:57 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:57 org.apache.http.headers << Connection: close
+29/08/2013 23:25:57 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62314<->127.0.0.1:18618 shut down
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62314<->127.0.0.1:18618 closed
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:57 devpinoyLogger NewHireESS--> N_User_main_1 exists and the value entered is nvsuperuser1	
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Sending request: GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/343a7be4-f854-4ff5-b245-26dfa794e009/attribute/value HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.wire >> "GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/343a7be4-f854-4ff5-b245-26dfa794e009/attribute/value HTTP/1.1[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Cache-Control: no-cache[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.headers >> GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/343a7be4-f854-4ff5-b245-26dfa794e009/attribute/value HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:57 org.apache.http.headers >> Cache-Control: no-cache
+29/08/2013 23:25:57 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:57 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:57 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Length: 87[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << Content-Length: 87
+29/08/2013 23:25:57 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:57 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:57 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:57 org.apache.http.headers << Connection: close
+29/08/2013 23:25:57 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":"nvsuperuser1"}[\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62315<->127.0.0.1:18618 shut down
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62315<->127.0.0.1:18618 closed
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Content-Length: 40[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:57 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:57 org.apache.http.headers >> Content-Length: 40
+29/08/2013 23:25:57 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:57 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:57 org.apache.http.wire >> "{"using":"name","value":"N_Pswd_main_1"}"
+29/08/2013 23:25:57 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:25:57 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:57 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:57 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:57 org.apache.http.headers << Connection: close
+29/08/2013 23:25:57 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97"}}[\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62316<->127.0.0.1:18618 shut down
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62316<->127.0.0.1:18618 closed
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97/clear HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97/clear HTTP/1.1[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Content-Length: 45[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97/clear HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:57 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:57 org.apache.http.headers >> Content-Length: 45
+29/08/2013 23:25:57 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:57 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:57 org.apache.http.wire >> "{"id":"8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97"}"
+29/08/2013 23:25:57 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:25:57 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:57 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:57 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:57 org.apache.http.headers << Connection: close
+29/08/2013 23:25:57 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62317<->127.0.0.1:18618 shut down
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62317<->127.0.0.1:18618 closed
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97/value HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97/value HTTP/1.1[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Content-Length: 64[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97/value HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:57 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:57 org.apache.http.headers >> Content-Length: 64
+29/08/2013 23:25:57 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:57 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:57 org.apache.http.wire >> "{"id":"8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97","value":["nuview"]}"
+29/08/2013 23:25:57 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:25:57 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:57 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:57 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:57 org.apache.http.headers << Connection: close
+29/08/2013 23:25:57 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62318<->127.0.0.1:18618 shut down
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62318<->127.0.0.1:18618 closed
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:57 devpinoyLogger NewHireESS--> N_Pswd_main_1 exists and the value entered is nuview
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Sending request: GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97/attribute/value HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.wire >> "GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97/attribute/value HTTP/1.1[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Cache-Control: no-cache[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.headers >> GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/8dab2bbe-d5a7-4beb-b3a2-9b48f6a14f97/attribute/value HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:57 org.apache.http.headers >> Cache-Control: no-cache
+29/08/2013 23:25:57 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:57 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:57 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Length: 81[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << Content-Length: 81
+29/08/2013 23:25:57 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:57 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:57 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:57 org.apache.http.headers << Connection: close
+29/08/2013 23:25:57 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":"nuview"}[\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62319<->127.0.0.1:18618 shut down
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62319<->127.0.0.1:18618 closed
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Content-Length: 39[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:57 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:57 org.apache.http.headers >> Content-Length: 39
+29/08/2013 23:25:57 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:57 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:57 org.apache.http.wire >> "{"using":"id","value":"N_Login_main_1"}"
+29/08/2013 23:25:57 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:25:57 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:25:57 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:25:57 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:25:57 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:25:57 org.apache.http.headers << Connection: close
+29/08/2013 23:25:57 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"89013680-0ea4-4aba-8ac3-d59cda5215ef"}}[\n]"
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62320<->127.0.0.1:18618 shut down
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62320<->127.0.0.1:18618 closed
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:25:57 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:25:57 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:25:57 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/89013680-0ea4-4aba-8ac3-d59cda5215ef/click HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/89013680-0ea4-4aba-8ac3-d59cda5215ef/click HTTP/1.1[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Content-Length: 45[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:25:57 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/89013680-0ea4-4aba-8ac3-d59cda5215ef/click HTTP/1.1
+29/08/2013 23:25:57 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:25:57 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:25:57 org.apache.http.headers >> Content-Length: 45
+29/08/2013 23:25:57 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:25:57 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:25:57 org.apache.http.wire >> "{"id":"89013680-0ea4-4aba-8ac3-d59cda5215ef"}"
+29/08/2013 23:26:21 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:21 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:26:21 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:21 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:21 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:21 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:21 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:21 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:21 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:21 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:26:21 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:21 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:21 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:21 org.apache.http.headers << Connection: close
+29/08/2013 23:26:21 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:26:21 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62321<->127.0.0.1:18618 shut down
+29/08/2013 23:26:21 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:21 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:21 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62321<->127.0.0.1:18618 closed
+29/08/2013 23:26:21 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:21 devpinoyLogger NewHireESS-->N_Login_main_1 exists and clicked 
+29/08/2013 23:26:28 devpinoyLogger starting test of NewHireESS
+29/08/2013 23:26:28 devpinoyLogger fetchExcelobjects method triggred for test case:NewHireESS
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:28 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:28 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Content-Length: 30[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:28 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:28 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:28 org.apache.http.headers >> Content-Length: 30
+29/08/2013 23:26:28 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:28 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:28 org.apache.http.wire >> "{"using":"name","value":"nav"}"
+29/08/2013 23:26:28 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:28 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:28 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:26:28 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:28 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:28 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:28 org.apache.http.headers << Connection: close
+29/08/2013 23:26:28 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"6d46f5bc-980d-40aa-8ee3-6d9f8b7e2d43"}}[\n]"
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62329<->127.0.0.1:18618 shut down
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62329<->127.0.0.1:18618 closed
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:28 devpinoyLogger Successfully returned the Object nav
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:28 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:26:28 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Content-Length: 57[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:26:28 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:28 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:28 org.apache.http.headers >> Content-Length: 57
+29/08/2013 23:26:28 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:28 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:28 org.apache.http.wire >> "{"id":{"ELEMENT":"6d46f5bc-980d-40aa-8ee3-6d9f8b7e2d43"}}"
+29/08/2013 23:26:28 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:28 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:28 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:26:28 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:28 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:28 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:28 org.apache.http.headers << Connection: close
+29/08/2013 23:26:28 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62330<->127.0.0.1:18618 shut down
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62330<->127.0.0.1:18618 closed
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:28 devpinoyLogger Sucessfully switched to nav frame..
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:28 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:28 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Content-Length: 43[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:28 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:28 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:28 org.apache.http.headers >> Content-Length: 43
+29/08/2013 23:26:28 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:28 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:28 org.apache.http.wire >> "{"using":"id","value":"TabTitle_Menu_More"}"
+29/08/2013 23:26:28 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:28 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:28 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:26:28 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:28 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:28 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:28 org.apache.http.headers << Connection: close
+29/08/2013 23:26:28 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"84674ee0-f7f0-4385-b704-f44aaffed1cf"}}[\n]"
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62331<->127.0.0.1:18618 shut down
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62331<->127.0.0.1:18618 closed
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:28 devpinoyLogger Successfully returned the Object TabTitle_Menu_More
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:28 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:28 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:28 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:28 org.apache.http.impl.conn.DefaultClientConnection Sending request: GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/84674ee0-f7f0-4385-b704-f44aaffed1cf/displayed HTTP/1.1
+29/08/2013 23:26:28 org.apache.http.wire >> "GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/84674ee0-f7f0-4385-b704-f44aaffed1cf/displayed HTTP/1.1[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Cache-Control: no-cache[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:28 org.apache.http.headers >> GET /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/84674ee0-f7f0-4385-b704-f44aaffed1cf/displayed HTTP/1.1
+29/08/2013 23:26:28 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:28 org.apache.http.headers >> Cache-Control: no-cache
+29/08/2013 23:26:28 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:28 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:29 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Content-Length: 78[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:29 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:29 org.apache.http.headers << Content-Length: 78
+29/08/2013 23:26:29 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:29 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:29 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:29 org.apache.http.headers << Connection: close
+29/08/2013 23:26:29 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":false}[\n]"
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62332<->127.0.0.1:18618 shut down
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62332<->127.0.0.1:18618 closed
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:29 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:29 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Content-Length: 54[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:29 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:29 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:29 org.apache.http.headers >> Content-Length: 54
+29/08/2013 23:26:29 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:29 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:29 org.apache.http.wire >> "{"using":"id","value":"TabTitle_Menu_Human Resources"}"
+29/08/2013 23:26:29 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:29 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:29 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:26:29 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:29 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:29 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:29 org.apache.http.headers << Connection: close
+29/08/2013 23:26:29 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"bbc8ed32-be26-4c69-a3af-2d804c648a44"}}[\n]"
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62333<->127.0.0.1:18618 shut down
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62333<->127.0.0.1:18618 closed
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:29 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/bbc8ed32-be26-4c69-a3af-2d804c648a44/click HTTP/1.1
+29/08/2013 23:26:29 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/bbc8ed32-be26-4c69-a3af-2d804c648a44/click HTTP/1.1[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Content-Length: 45[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/bbc8ed32-be26-4c69-a3af-2d804c648a44/click HTTP/1.1
+29/08/2013 23:26:29 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:29 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:29 org.apache.http.headers >> Content-Length: 45
+29/08/2013 23:26:29 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:29 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:29 org.apache.http.wire >> "{"id":"bbc8ed32-be26-4c69-a3af-2d804c648a44"}"
+29/08/2013 23:26:29 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:29 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:29 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:26:29 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:29 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:29 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:29 org.apache.http.headers << Connection: close
+29/08/2013 23:26:29 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62334<->127.0.0.1:18618 shut down
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62334<->127.0.0.1:18618 closed
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:29 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:29 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Content-Length: 76[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:29 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:29 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:29 org.apache.http.headers >> Content-Length: 76
+29/08/2013 23:26:29 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:29 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:29 org.apache.http.wire >> "{"using":"xpath","value":"//span[@display='Processes' and @tip='HR Tasks']"}"
+29/08/2013 23:26:29 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:29 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:29 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:26:29 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:29 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:29 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:29 org.apache.http.headers << Connection: close
+29/08/2013 23:26:29 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"baf6db3d-d217-45fe-a83e-f21599697c54"}}[\n]"
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62335<->127.0.0.1:18618 shut down
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62335<->127.0.0.1:18618 closed
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:29 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:29 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:29 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:29 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/baf6db3d-d217-45fe-a83e-f21599697c54/click HTTP/1.1
+29/08/2013 23:26:29 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/baf6db3d-d217-45fe-a83e-f21599697c54/click HTTP/1.1[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Content-Length: 45[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:29 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/baf6db3d-d217-45fe-a83e-f21599697c54/click HTTP/1.1
+29/08/2013 23:26:29 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:29 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:29 org.apache.http.headers >> Content-Length: 45
+29/08/2013 23:26:29 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:29 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:29 org.apache.http.wire >> "{"id":"baf6db3d-d217-45fe-a83e-f21599697c54"}"
+29/08/2013 23:26:30 org.apache.http.wire << "HTTP/1.1 500 Internal Server Error[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Length: 111[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 500 Internal Server Error
+29/08/2013 23:26:30 org.apache.http.headers << HTTP/1.1 500 Internal Server Error
+29/08/2013 23:26:30 org.apache.http.headers << Content-Length: 111
+29/08/2013 23:26:30 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:30 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:30 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:30 org.apache.http.headers << Connection: close
+29/08/2013 23:26:30 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":11,"value":{"message":"Cannot click on element"}}[\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62336<->127.0.0.1:18618 shut down
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62336<->127.0.0.1:18618 closed
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:30 devpinoyLogger Before switchToFrameFromDefault
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Length: 11[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Length: 11
+29/08/2013 23:26:30 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:30 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:30 org.apache.http.wire >> "{"id":null}"
+29/08/2013 23:26:30 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:26:30 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:30 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:30 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:30 org.apache.http.headers << Connection: close
+29/08/2013 23:26:30 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62337<->127.0.0.1:18618 shut down
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62337<->127.0.0.1:18618 closed
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:30 devpinoyLogger Sucessfully switched to default frame..Next is login frame..
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Length: 30[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Length: 30
+29/08/2013 23:26:30 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:30 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:30 org.apache.http.wire >> "{"using":"id","value":"login"}"
+29/08/2013 23:26:30 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:26:30 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:30 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:30 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:30 org.apache.http.headers << Connection: close
+29/08/2013 23:26:30 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"895e150f-92f8-42a5-a7d3-007b00aaf62a"}}[\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62338<->127.0.0.1:18618 shut down
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62338<->127.0.0.1:18618 closed
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:30 devpinoyLogger Successfully returned the Object login
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Length: 57[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Length: 57
+29/08/2013 23:26:30 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:30 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:30 org.apache.http.wire >> "{"id":{"ELEMENT":"895e150f-92f8-42a5-a7d3-007b00aaf62a"}}"
+29/08/2013 23:26:30 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:26:30 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:30 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:30 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:30 org.apache.http.headers << Connection: close
+29/08/2013 23:26:30 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62339<->127.0.0.1:18618 shut down
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62339<->127.0.0.1:18618 closed
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:30 devpinoyLogger Sucessfully switched to default frame..Next is nav frame..
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Length: 30[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Length: 30
+29/08/2013 23:26:30 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:30 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:30 org.apache.http.wire >> "{"using":"name","value":"nav"}"
+29/08/2013 23:26:30 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:26:30 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:30 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:30 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:30 org.apache.http.headers << Connection: close
+29/08/2013 23:26:30 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"6d46f5bc-980d-40aa-8ee3-6d9f8b7e2d43"}}[\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62340<->127.0.0.1:18618 shut down
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62340<->127.0.0.1:18618 closed
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:30 devpinoyLogger Successfully returned the Object nav
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Length: 57[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/frame HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Length: 57
+29/08/2013 23:26:30 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:30 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:30 org.apache.http.wire >> "{"id":{"ELEMENT":"6d46f5bc-980d-40aa-8ee3-6d9f8b7e2d43"}}"
+29/08/2013 23:26:30 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:26:30 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:30 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:30 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:30 org.apache.http.headers << Connection: close
+29/08/2013 23:26:30 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62341<->127.0.0.1:18618 shut down
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62341<->127.0.0.1:18618 closed
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:30 devpinoyLogger Sucessfully switched to nav frame..
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Length: 40[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Length: 40
+29/08/2013 23:26:30 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:30 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:30 org.apache.http.wire >> "{"using":"id","value":"N_Logout_none_1"}"
+29/08/2013 23:26:30 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Length: 123[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:30 org.apache.http.headers << Content-Length: 123
+29/08/2013 23:26:30 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:30 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:30 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:30 org.apache.http.headers << Connection: close
+29/08/2013 23:26:30 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":{"ELEMENT":"bfa3d086-d533-4efc-8bda-86cb5354cce0"}}[\n]"
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62342<->127.0.0.1:18618 shut down
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62342<->127.0.0.1:18618 closed
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:30 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:30 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:30 org.apache.http.impl.conn.DefaultClientConnection Sending request: POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/bfa3d086-d533-4efc-8bda-86cb5354cce0/click HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.wire >> "POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/bfa3d086-d533-4efc-8bda-86cb5354cce0/click HTTP/1.1[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Content-Length: 45[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:30 org.apache.http.headers >> POST /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/element/bfa3d086-d533-4efc-8bda-86cb5354cce0/click HTTP/1.1
+29/08/2013 23:26:30 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Type: application/json; charset=utf-8
+29/08/2013 23:26:30 org.apache.http.headers >> Content-Length: 45
+29/08/2013 23:26:30 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:30 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:30 org.apache.http.wire >> "{"id":"bfa3d086-d533-4efc-8bda-86cb5354cce0"}"
+29/08/2013 23:26:31 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:31 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:26:31 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:31 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:31 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:31 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:31 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:31 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:31 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:31 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:26:31 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:31 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:31 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:31 org.apache.http.headers << Connection: close
+29/08/2013 23:26:31 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:26:31 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62343<->127.0.0.1:18618 shut down
+29/08/2013 23:26:31 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:31 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:31 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62343<->127.0.0.1:18618 closed
+29/08/2013 23:26:31 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:31 devpinoyLogger NewHireESS-->N_Logout_none_1 exists and clicked 
+29/08/2013 23:26:32 devpinoyLogger NewHireESS result in the excel sheet is marked as Pass
+29/08/2013 23:26:39 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:39 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:39 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:39 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:39 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:39 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:39 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:39 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:39 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:39 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:39 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:39 org.apache.http.impl.conn.DefaultClientConnection Sending request: DELETE /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/window HTTP/1.1
+29/08/2013 23:26:39 org.apache.http.wire >> "DELETE /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/window HTTP/1.1[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.headers >> DELETE /session/1b36f682-d0ea-4f83-85f9-9f88964e9253/window HTTP/1.1
+29/08/2013 23:26:39 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:39 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:39 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:39 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.wire << "Content-Length: 77[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:39 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:39 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:39 org.apache.http.headers << Content-Length: 77
+29/08/2013 23:26:39 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:39 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:39 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:39 org.apache.http.headers << Connection: close
+29/08/2013 23:26:39 org.apache.http.wire << "{"sessionId":"1b36f682-d0ea-4f83-85f9-9f88964e9253","status":0,"value":null}[\n]"
+29/08/2013 23:26:39 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62345<->127.0.0.1:18618 shut down
+29/08/2013 23:26:39 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:39 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:39 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62345<->127.0.0.1:18618 closed
+29/08/2013 23:26:39 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:39 devpinoyLogger Closing the browser 
+29/08/2013 23:26:39 devpinoyLogger Closing the launched ie browser
+29/08/2013 23:26:39 devpinoyLogger Checking the run mode of Suite Benefits Suite..
+29/08/2013 23:26:39 devpinoyLogger As the run mode of the Suite Benefits Suite is set to NO .. Hence skipping all the test cases under the suite
+29/08/2013 23:26:40 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Get connection: {}->http://localhost:18618, timeout = 120000
+29/08/2013 23:26:40 org.apache.http.impl.conn.tsccm.ConnPoolByRoute [{}->http://localhost:18618] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+29/08/2013 23:26:40 org.apache.http.impl.conn.tsccm.ConnPoolByRoute No free connections [{}->http://localhost:18618][null]
+29/08/2013 23:26:40 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Available capacity: 2000 out of 2000 [{}->http://localhost:18618][null]
+29/08/2013 23:26:40 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Creating new connection [{}->http://localhost:18618]
+29/08/2013 23:26:40 org.apache.http.impl.conn.DefaultClientConnectionOperator Connecting to localhost:18618
+29/08/2013 23:26:40 org.apache.http.client.protocol.RequestAddCookies CookieSpec selected: best-match
+29/08/2013 23:26:40 org.apache.http.client.protocol.RequestAuthCache Auth cache not set in the context
+29/08/2013 23:26:40 org.apache.http.client.protocol.RequestTargetAuthentication Target auth state: UNCHALLENGED
+29/08/2013 23:26:40 org.apache.http.client.protocol.RequestProxyAuthentication Proxy auth state: UNCHALLENGED
+29/08/2013 23:26:40 org.apache.http.impl.client.DefaultHttpClient Attempt 1 to execute request
+29/08/2013 23:26:40 org.apache.http.impl.conn.DefaultClientConnection Sending request: DELETE /session/1b36f682-d0ea-4f83-85f9-9f88964e9253 HTTP/1.1
+29/08/2013 23:26:40 org.apache.http.wire >> "DELETE /session/1b36f682-d0ea-4f83-85f9-9f88964e9253 HTTP/1.1[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.wire >> "Accept: application/json, image/png[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.wire >> "Host: localhost:18618[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.wire >> "Connection: Keep-Alive[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.wire >> "[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.headers >> DELETE /session/1b36f682-d0ea-4f83-85f9-9f88964e9253 HTTP/1.1
+29/08/2013 23:26:40 org.apache.http.headers >> Accept: application/json, image/png
+29/08/2013 23:26:40 org.apache.http.headers >> Host: localhost:18618
+29/08/2013 23:26:40 org.apache.http.headers >> Connection: Keep-Alive
+29/08/2013 23:26:40 org.apache.http.wire << "HTTP/1.1 200 OK[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.wire << "Content-Length: 86[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.wire << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.wire << "Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.wire << "Accept-Ranges: bytes[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.wire << "Connection: close[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.wire << "[\r][\n]"
+29/08/2013 23:26:40 org.apache.http.impl.conn.DefaultClientConnection Receiving response: HTTP/1.1 200 OK
+29/08/2013 23:26:40 org.apache.http.headers << HTTP/1.1 200 OK
+29/08/2013 23:26:40 org.apache.http.headers << Content-Length: 86
+29/08/2013 23:26:40 org.apache.http.headers << Content-Type: application/json; charset=UTF-8
+29/08/2013 23:26:40 org.apache.http.headers << Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+29/08/2013 23:26:40 org.apache.http.headers << Accept-Ranges: bytes
+29/08/2013 23:26:40 org.apache.http.headers << Connection: close
+29/08/2013 23:26:40 org.apache.http.wire << "{ "status" : 0, "sessionId" : "1b36f682-d0ea-4f83-85f9-9f88964e9253", "value" : null }"
+29/08/2013 23:26:40 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62347<->127.0.0.1:18618 shut down
+29/08/2013 23:26:40 org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager Released connection is not reusable.
+29/08/2013 23:26:40 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Releasing connection [{}->http://localhost:18618][null]
+29/08/2013 23:26:40 org.apache.http.impl.conn.DefaultClientConnection Connection 0.0.0.0:62347<->127.0.0.1:18618 closed
+29/08/2013 23:26:40 org.apache.http.impl.conn.tsccm.ConnPoolByRoute Notifying no-one, there are no waiting threads
+29/08/2013 23:26:41 devpinoyLogger Closing the browser 

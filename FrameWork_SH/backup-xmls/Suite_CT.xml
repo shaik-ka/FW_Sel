@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Common Tables" allow-return-values="true">
+
+<!--  Validation Test cases -->
+
+<test name="CT_Job_Validation" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteCT.CT_Job_Validation" ></class>  
+    </classes>
+</test>
+<test name="CT_Entity_Validation" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteCT.CT_Entity_Validation" ></class>  
+    </classes>
+</test>
+
+<!--  Negative Test cases -->
+
+<test name="CT_Job_Negative" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteCT.CT_Job_Negative" ></class>  
+    </classes>
+</test>
+
+<test name="CT_Entity_Negative" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteCT.CT_Entity_Negative" ></class>  
+    </classes>
+</test>
+</suite>
+

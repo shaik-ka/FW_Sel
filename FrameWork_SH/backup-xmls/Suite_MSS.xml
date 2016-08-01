@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite MSS" allow-return-values="true">
+
+<test name="MSS_PAY_SalaryChange" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMSS.MSS_PAY_SalaryChange" ></class>  
+    </classes>
+</test>
+
+<test name="MSS_Perform_Mgr_AddEmpGoal_EmpHvgGoals" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteMSS.MSS_Perform_Mgr_AddEmpGoal_EmpHvgGoals" ></class>  
+    </classes>
+</test>
+</suite>
+

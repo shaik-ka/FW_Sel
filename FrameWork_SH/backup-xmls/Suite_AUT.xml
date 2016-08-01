@@ -1,0 +1,92 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Authorizations" allow-return-values="true">
+
+<test name="AUT_Approve" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_Approve" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_EmployeeSignsUpForInvstmntPlan_Approve" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_EmployeeSignsUpForInvstmntPlan_Approve" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_EmployeeSignsUpForInvstmntPlan_Reject" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_EmployeeSignsUpForInvstmntPlan_Reject" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_DuplicateAuthorizationRequest_ErrorMessage" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_DuplicateAuthorizationRequest_ErrorMessage" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_Reject" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_Reject" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_Forward" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_Forward" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_Forward_Reject" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_Forward_Reject" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_Initiate_Cancel" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_Initiate_Cancel" ></class>  
+    </classes>
+</test>
+<test name="AUT_Initiate_Approved_Cancel" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_Initiate_Approved_Cancel" ></class>  
+    </classes>
+</test>
+<test name="AUT_Initiate_ForwardEdit_ApproveEdit_Reject" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_Initiate_ForwardEdit_ApproveEdit_Reject" ></class>  
+    </classes>
+</test>
+<test name="AUT_Initiate_ForwardApprove_FinalApproval" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_Initiate_ForwardApprove_FinalApproval" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_VerifyNewItemDetails_Approve" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_VerifyNewItemDetails_Approve" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_VerifyAlterItemDetails_Approve" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_VerifyAlterItemDetails_Approve" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_VerifyDeleteItemDetails_Approve" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_VerifyDeleteItemDetails_Approve" ></class>  
+    </classes>
+</test>
+
+<test name="AUT_Conditional_SalaryChange" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteAUT.AUT_Conditional_SalaryChange" ></class>  
+    </classes>
+</test>
+
+</suite>
+

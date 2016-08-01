@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Benefits" allow-return-values="true">
+
+<test name="BEN_EmployeeSignsUpForInvstmntPlan" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteBEN.BEN_EmployeeSignsUpForInvstmntPlan" ></class>  
+    </classes>
+</test>
+
+<test name="BEN_AddInvestmentPlan_Negative" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteBEN.BEN_AddInvestmentPlan_Negative" ></class>  
+    </classes>
+</test>
+
+<test name="BEN_InvestmentPlan_Validations" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteBEN.BEN_InvestmentPlan_Validations" ></class>  
+    </classes>
+</test>
+
+<test name="BEN_EmployeeModifiesInvstmntPlan" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteBEN.BEN_EmployeeModifiesInvstmntPlan" ></class>  
+    </classes>
+</test>
+
+<test name="BEN_EmployeeEndsEnrollmentInInvstmntPlan" allow-return-values="true">
+    <classes>
+        <class name="com.nuview.suiteBEN.BEN_EmployeeEndsEnrollmentInInvstmntPlan" ></class>  
+    </classes>
+</test>
+
+
+</suite>
+
