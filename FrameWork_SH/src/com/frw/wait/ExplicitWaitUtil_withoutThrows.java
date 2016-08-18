@@ -19,39 +19,41 @@ import com.frw.util.ByLocator;
 import com.frw.util.WaitUtil;
 
 public class ExplicitWaitUtil_withoutThrows extends Base{
+	
+	/*
 	/**
 	 * Waits for the element to be visible for the required seconds
 	 * @param objectlocatorType
 	 * @param objectlocator
 	 * @param waitSeconds
 	 * @return
-	 */
+	 *//*
 	public static  WebElement waitForElement(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 
 		WebElement field=null;	
 		field=waitForElement_logic("VISIBILITY",driver,objectlocatorType,objectlocator, waitSeconds );
 		//waitForStaleOf(field);
-		/* commented on Jun 2 2014
+		 commented on Jun 2 2014
 	    log("Next verify stale..");
-	    stal(field);*/
+	    stal(field);
 
 		return field;
 	} 
 
-	/**
+	*//**
 	 * Waits for the element to be present for the required seconds
 	 * @param objectlocatorType
 	 * @param objectlocator
 	 * @param waitSeconds
 	 * @return
-	 */	
+	 *//*	
 	public static  WebElement waitForPresenceOfElement(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 		WebElement field=null;	
 		field=waitForElement_logic("PRESENCE",driver,objectlocatorType,objectlocator, waitSeconds );
 		return field;
 	} 
 
-	/**
+	*//**
 	 * Fetches a an action performable element for sucess
 	 * @author khshaik
 	 * @date Feb 12 2015
@@ -60,14 +62,14 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	 * @param objectlocator
 	 * @param waitSeconds
 	 * @return
-	 */
+	 *//*
 	public static  WebElement waitForElementTobeActionable(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 
 		WebElement field=null;	
 		field=waitForElement_logic("CLICKABLE",driver,objectlocatorType,objectlocator, waitSeconds );
 		return field;
 	} 
-	/**
+	*//**
 	 * Waits for all elements to be present
 	 * @author Shaik
 	 * @date Mar 03 2016
@@ -76,13 +78,13 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	 * @param objectlocator
 	 * @param waitSeconds
 	 * @return
-	 */
+	 *//*
 	public static List< WebElement> waitForPresenceOfElements(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 		List< WebElement> elements=null;	
 		elements=waitForElements_logic("PRESENCE",driver,objectlocatorType,objectlocator, waitSeconds );
 		return elements;
 	} 
-	/**
+	*//**
 	 * Waits for all elements to be visible
 	 * @author Shaik
 	 * @date Mar 03 2016
@@ -91,7 +93,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	 * @param objectlocator
 	 * @param waitSeconds
 	 * @return
-	 */
+	 *//*
 	public static List< WebElement> waitForVisibilityOfElements(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 		List< WebElement> elements=null;	
 		elements=waitForElements_logic("VISIBILITY",driver,objectlocatorType,objectlocator, waitSeconds );
@@ -99,7 +101,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	} 
 
 
-	/**
+	*//**
 	 * Waits for the dropdown items to be loaded
 	 * @author khshaik
 	 * @date Jan 10 2014
@@ -107,7 +109,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	 * @param element
 	 * @param waitForSeconds
 	 * @return
-	 */
+	 *//*
 	public static Select waitForDropdownItems(WebDriver driver,WebElement element, int waitForSeconds){
 		List<WebElement>dropdownList=null;
 		Select dropdown =null;
@@ -115,8 +117,8 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 		for (i=1 ;i<=waitForSeconds;i++){
 			dropdown = new Select(element);
 			dropdownList=dropdown.getOptions();
-			/*commented on Jan 20 2015 as it is giving problem when page ajax is not loaded in 20 secs
-			PageLoadWaitUtil.waitForAjax(driver);*/
+			commented on Jan 20 2015 as it is giving problem when page ajax is not loaded in 20 secs
+			PageLoadWaitUtil.waitForAjax(driver);
 
 			if(dropdownList.size()!=0){
 				logsObj.log("waitForDropdownItems:-Able to load items of the dropdown..");
@@ -133,14 +135,14 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 
 
 
-	/**
+	*//**
 	 *  Waits for an element to be invisible on the page/frame(ExpectedCondition method)
 	 * @param driver
 	 * @param objectlocatorType
 	 * @param objectlocator
 	 * @param waitSeconds
 	 * @return
-	 */
+	 *//*
 
 	public static  boolean waitUntilInvisibilityOfElement(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 
@@ -172,7 +174,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 		return flag;
 	} 
 
-	/*public static List<WebElement> expectedVisibleElements(WebDriver driver,List<WebElement> elements,Integer waitForSeconds){
+	public static List<WebElement> expectedVisibleElements(WebDriver driver,List<WebElement> elements,Integer waitForSeconds){
 		List<WebElement>elements_visible=null;
 		Long wait =Long.valueOf(Integer.valueOf(waitForSeconds));
 		logsObj.log("Into the expectedVisibleElements");
@@ -191,10 +193,10 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 		}
 
 		return elements_visible;
-	}*/
+	}
 
 
-	/**
+	*//**
 	 * Waits for the element to be in <expectedCondition> for the required seconds
 	 * @author sahamed
 	 * @param objectlocatorType
@@ -202,7 +204,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	 * @param waitSeconds
 	 * @return element 
 	 * @Date 16 Aug 2013
-	 */
+	 *//*
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private static  WebElement waitForElement_logic_mar2016(String expectedCondition,WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 
@@ -262,7 +264,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	} 
 	
 	
-	/**
+	*//**
 	 * Waits for the elements to be in <expectedCondition> for the required seconds
 	 * @author Khaleel
 	 * @date Feb 2016
@@ -272,7 +274,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	 * @param objectlocator
 	 * @param waitSeconds
 	 * @return
-	 */	
+	 *//*	
 	private static  List<WebElement> waitForElements_logic(String expectedCondition,WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 
 		List<WebElement> elements=null;
@@ -302,7 +304,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	} 
 
 	
-	/**
+	*//**
 	 * Retrives the visible elements from the given locator
 	 * @author Khaleel
 	 * @date Jan 2016
@@ -311,7 +313,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	 * @param objectlocator
 	 * @param waitSeconds
 	 * @return
-	 */
+	 *//*
 	public static int getVisibleElementsSize(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds){
 		int flag=0;
 		List<WebElement>list=waitForVisibilityOfElements(driver, objectlocatorType, objectlocator, waitSeconds);
@@ -321,7 +323,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 		return flag;
 	}
 
-	/**
+	*//**
 	 * Find a Radio button from the Radio Group
 	 * @author sahamed
 	 * @Date Feb 18 2014
@@ -329,7 +331,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	 * @param value
 	 * @param radioButton
 	 * @return input webelement for success and null for failure
-	 */
+	 *//*
 
 	public static WebElement fetchRadiobuttonFromGroup(WebDriver driver,String objectlocatorType, String objectlocator,String radioButton,int waitSeconds)
 	{
@@ -376,7 +378,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	}	
 
 
-	/**
+	*//**
 	 * Returns the list of visible webelements of the given locator
 	 * @author khshaik
 	 * @date Jan 14 2014
@@ -384,7 +386,7 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 	 * @param identifyBy
 	 * @param locator
 	 * @return
-	 */
+	 *//*
 	public static List<WebElement> visibleElementsList(WebDriver driver, String objectlocatorType,String objectlocator,int waitSeconds){
 		int count=0;
 
@@ -412,5 +414,5 @@ public class ExplicitWaitUtil_withoutThrows extends Base{
 		}
 
 		return visible_elements;
-	}
+	}*/
 }
