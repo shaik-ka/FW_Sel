@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.frw.Constants.Constants_FRMWRK;
 import com.frw.base.Base;
+import com.frw.enums.ExpCondition;
 import com.frw.util.ByLocator;
 import com.frw.util.WaitUtil;
 
@@ -30,7 +31,7 @@ public class ExplicitWaitUtil extends Base{
 	public static  WebElement waitForElement(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) throws Throwable {
 
 		WebElement field=null;	
-		field=waitForElement_logic("VISIBILITY",driver,objectlocatorType,objectlocator, waitSeconds );
+		field=waitForElement_logic(ExpCondition.VISIBILITY,driver,objectlocatorType,objectlocator, waitSeconds );
 		//waitForStaleOf(field);
 		/* commented on Jun 2 2014
 	    log("Next verify stale..");
@@ -49,7 +50,7 @@ public class ExplicitWaitUtil extends Base{
 	 */	
 	public static  WebElement waitForPresenceOfElement(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) throws Throwable {
 		WebElement field=null;	
-		field=waitForElement_logic("PRESENCE",driver,objectlocatorType,objectlocator, waitSeconds );
+		field=waitForElement_logic(ExpCondition.PRESENCE,driver,objectlocatorType,objectlocator, waitSeconds );
 		return field;
 	} 
 
@@ -67,7 +68,7 @@ public class ExplicitWaitUtil extends Base{
 	public static  WebElement waitForElementTobeActionable(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) throws Throwable {
 
 		WebElement field=null;	
-		field=waitForElement_logic("CLICKABLE",driver,objectlocatorType,objectlocator, waitSeconds );
+		field=waitForElement_logic(ExpCondition.CLICKABLE,driver,objectlocatorType,objectlocator, waitSeconds );
 		return field;
 	} 
 	/**
@@ -82,7 +83,7 @@ public class ExplicitWaitUtil extends Base{
 	 */
 	public static List< WebElement> waitForPresenceOfElements(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 		List< WebElement> elements=null;	
-		elements=waitForElements_logic("PRESENCE",driver,objectlocatorType,objectlocator, waitSeconds );
+		elements=waitForElements_logic(ExpCondition.PRESENCE,driver,objectlocatorType,objectlocator, waitSeconds );
 		return elements;
 	} 
 	/**
@@ -97,7 +98,7 @@ public class ExplicitWaitUtil extends Base{
 	 */
 	public static List< WebElement> waitForVisibilityOfElements(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 		List< WebElement> elements=null;	
-		elements=waitForElements_logic("VISIBILITY",driver,objectlocatorType,objectlocator, waitSeconds );
+		elements=waitForElements_logic(ExpCondition.VISIBILITY,driver,objectlocatorType,objectlocator, waitSeconds );
 		return elements;
 	} 
 
@@ -207,7 +208,7 @@ public class ExplicitWaitUtil extends Base{
 	 * @Date 16 Aug 2013
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	private static  WebElement waitForElement_logic_mar2016(String expectedCondition,WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
+	private static  WebElement waitForElement_logic_mar2016(ExpCondition expectedCondition,WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 
 		WebElement field=null;
 		By by; //The by type can be name ,id ,class name - supported by the Selenium by class
@@ -236,7 +237,7 @@ public class ExplicitWaitUtil extends Base{
 		}
 		return field;
 	} 
-	public static  WebElement waitForElement_logic(String expectedCondition,WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) throws Throwable {
+	public static  WebElement waitForElement_logic(ExpCondition expectedCondition,WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) throws Throwable {
 
 		WebElement element=null;
 		By Bylocator=null;		
@@ -278,7 +279,7 @@ public class ExplicitWaitUtil extends Base{
 	 * @param waitSeconds
 	 * @return
 	 */	
-	private static  List<WebElement> waitForElements_logic(String expectedCondition,WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
+	private static  List<WebElement> waitForElements_logic(ExpCondition expectedCondition,WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) {
 
 		List<WebElement> elements=null;
 		By Bylocator=null;		
@@ -327,7 +328,7 @@ public class ExplicitWaitUtil extends Base{
 	}
 
 	/**
-	 * Find a Radio button from the Radio Group
+	 * Find a Radio button from the Radio Group (By Visibility of Elements)
 	 * @author sahamed
 	 * @Date Feb 18 2014
 	 * @param identifyBy
@@ -379,8 +380,77 @@ public class ExplicitWaitUtil extends Base{
 
 		return element;
 	}	
+/**
+ * Find a Radio button from the Radio Group with attribute(By Presence of Elements)
+ * @author Khaleel
+ * @date Aug 16 2016
+ * @param driver
+ * @param objectlocatorType
+ * @param objectlocator
+ * @param radioButton
+ * @param attributeName
+ * @param waitSeconds
+ * @return
+ */
+
+	public static WebElement fetchRadiobuttonFromGroup(WebDriver driver,String objectlocatorType, String objectlocator,String radioButton,ExpCondition expectedCondition,String attributeName,int waitSeconds)
+	{
+		List<WebElement> listElement = null;
+		WebElement element=null;
+		String str;
+
+		try 
+		{
+			switch (expectedCondition){
+			case VISIBILITY:
+				listElement= waitForVisibilityOfElements(driver, objectlocatorType, objectlocator, waitSeconds);
+				break;
+			case PRESENCE:
+				listElement= waitForPresenceOfElements(driver, objectlocatorType, objectlocator, waitSeconds);
+				break;
+			case CLICKABLE:
+				listElement= waitForVisibilityOfElements(driver, objectlocatorType, objectlocator, waitSeconds);
+				break;
+			default:
+				break;
+			}
+			int size=listElement.size();
+			if(size==0){
+				return element;
+			}
+			else{
+
+				for (WebElement ele :listElement){
+					if(attributeName.equalsIgnoreCase("TEXT")){
+						str=ele.getText();
+					}else{
+						str=ele.getAttribute(attributeName);
+					}					
+					if(str.equalsIgnoreCase(radioButton)){
+						element=ele;
+						break;
+					}
+
+				}
+			}
+
+		}
 
 
+		catch (ElementNotVisibleException env) 
+		{
+			logsObj.logError("FindRadiobutton:Element "+objectlocator+" is not visible..due to -->",env);
+
+		}
+
+		catch (Exception genException)
+		{
+			logsObj.logError("FindRadiobutton: General Exception error .."+"while fecth element "+objectlocator+" due to -->  ",genException);				        	
+		}
+
+
+		return element;
+	}	
 	/**
 	 * Returns the list of visible webelements of the given locator
 	 * @author khshaik
