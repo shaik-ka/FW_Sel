@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.frw.base.Base;
+import com.frw.enums.ExpCondition;
 
 public class ByLocator extends Base{
 	
@@ -50,7 +51,7 @@ public static  By fetch_ByLocator(WebDriver driver,String objectlocatorType,Stri
 	 * @param waitSeconds
 	 * @return
 	 */
-	public static WebElement getExpectedConditionsLocator( String expectedCondition,final By locator ,WebDriver driver,int waitSeconds) {
+	public static WebElement getExpectedConditionsLocator( ExpCondition expectedCondition,final By locator ,WebDriver driver,int waitSeconds) {
 		logsObj.log( "Get element by locator: " + locator.toString());	
 		//Long wait =Long.valueOf(Integer.valueOf(waitSeconds));
 
@@ -62,19 +63,17 @@ public static  By fetch_ByLocator(WebDriver driver,String objectlocatorType,Stri
 		WebElement we = null;
 		boolean found=false;
 		try {
-			if(expectedCondition.equalsIgnoreCase("VISIBILITY")){
-				we = syncWait.until( ExpectedConditions.visibilityOfElementLocated( locator ) );						
-			}
-			else if(expectedCondition.equalsIgnoreCase("PRESENCE")){
+			switch (expectedCondition){
+			case VISIBILITY:
+				we = syncWait.until( ExpectedConditions.visibilityOfElementLocated( locator ) );
+				break;
+			case PRESENCE:
 				we = syncWait.until( ExpectedConditions.presenceOfElementLocated( locator ) );
-			}
-			else if(expectedCondition.equalsIgnoreCase("CLICKABLE")){
+				break;
+			case CLICKABLE:
 				we = syncWait.until( ExpectedConditions.elementToBeClickable( locator ) );
+				break;
 			}
-			else{
-
-			}
-
 			found = true;					
 		} catch ( StaleElementReferenceException e ) {						
 			logsObj.log( "Stale element: \n" + e.getMessage() + "\n");
@@ -99,7 +98,7 @@ public static  By fetch_ByLocator(WebDriver driver,String objectlocatorType,Stri
 	 * @param waitSeconds
 	 * @return
 	 */
-	public static List<WebElement> getExpectedConditionsLocators( String expectedCondition,final By locator ,WebDriver driver,int waitSeconds) {
+	public static List<WebElement> getExpectedConditionsLocators( ExpCondition expectedCondition,final By locator ,WebDriver driver,int waitSeconds) {
 		logsObj.log( "Get element by locator: " + locator.toString());	
 		//Long wait =Long.valueOf(Integer.valueOf(waitSeconds));
 
@@ -111,14 +110,17 @@ public static  By fetch_ByLocator(WebDriver driver,String objectlocatorType,Stri
 		List<WebElement> we = null;
 		boolean found=false;
 		try {
-			if(expectedCondition.equalsIgnoreCase("VISIBILITY")){
-				we = syncWait.until( ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));						
-			}
-			else if(expectedCondition.equalsIgnoreCase("PRESENCE")){
+			switch (expectedCondition){
+			
+			case VISIBILITY:
+				we = syncWait.until( ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));	
+				break;
+			case PRESENCE :
 				we = syncWait.until( ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+				break;		
+			case CLICKABLE:
+				we = syncWait.until( ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));	
 			}
-
-
 			found = true;					
 		} catch ( StaleElementReferenceException e ) {						
 			logsObj.log( "Stale element: \n" + e.getMessage() + "\n");
