@@ -4,8 +4,11 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 
 public class FileUtil {
 
@@ -172,7 +175,7 @@ public class FileUtil {
 	 * @param filePath
 	 */
 
-	public void DeletefileExists(String filePath){
+	public static void DeletefileExists(String filePath){
 		try{
 			File file=new File(filePath);
 
@@ -224,4 +227,107 @@ public class FileUtil {
 		}
 	}
 
+	public static String getFileNameFromPath(String filePath){
+
+		String name = FilenameUtils.getName(filePath);
+		String[] str=name.split("\\.");		
+		return str[0];
+
+	}
+
+	/**
+	 * fetches file name from the given path
+	 * @param filePath
+	 * @return 
+	 */
+	public static String getFileNameExtenstionFromPath(String filePath){
+		String name = FilenameUtils.getName(filePath);
+		String[] str=name.split("\\.");		
+		return str[1];
+
+	}
+	
+	/**
+	 * fetches file name with ext from the given path
+	 * @param filePath
+	 * @return 
+	 */
+
+	public static String getFileNamewithExtensionFromPath(String filePath){
+
+		String name = FilenameUtils.getName(filePath);
+
+		return name;
+
+	}
+	
+	/**
+	 * verifies the given file is available
+	 * @author ShaikK
+	 * @date Mar 9 2019
+	 * @param filePath
+	 * @return if success true else false
+	 */
+	public static boolean checkGivenFileExists(String filePath){
+		boolean flag=false;
+		File file = new File(filePath);
+
+		if (!file.exists()) {			
+		}else{
+			flag=true;
+		}
+		return flag;
+	}
+	/**
+	 * verifies the given file is available and size is not zero
+	 * @param filePath
+	 * @return success true else false
+	 */
+
+	public static boolean checkGivenFileExistsSizeisNotZero(String filePath){
+		boolean flag=false;
+		File file = new File(filePath);
+		if (file.exists() && file.isFile()) {			
+			long len=file.length();
+			if(len!=(long)0){
+				flag=true;
+			}
+
+		}else{			
+		}
+		return flag;
+	}
+	
+	/**
+	 * returns absolute file path of each file in the folder
+	 * @param folderPath
+	 * @param numberoffiles
+	 * @return
+	 */
+	public static List<String> getFilesFromFolder(String folderPath,int numberoffiles){
+		List<String> filestoreturn = new ArrayList<String>();
+		File f=new File(folderPath);
+		File[] allSubFiles=f.listFiles();
+		int counter=1;
+		for (File file : allSubFiles) {
+			if(file.isDirectory())
+			{
+				System.out.println(file.getAbsolutePath()+" is directory");				
+				//Steps for directory
+			}
+			else
+			{
+				System.out.println(file.getAbsolutePath()+" is file");
+				//steps for files
+				filestoreturn.add(file.getAbsolutePath().toString());
+			}
+			if(counter==numberoffiles){
+				return filestoreturn;
+			}
+
+			counter=counter+1;
+
+		}
+		return filestoreturn;
+	}
 }
