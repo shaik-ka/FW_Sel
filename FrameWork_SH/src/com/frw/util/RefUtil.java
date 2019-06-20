@@ -255,20 +255,25 @@ public class RefUtil {
 	 * @return
 	 * @throws Throwable
 	 */
-	public static Field getPrivateFieldofClass(Class<?> theClass,String initializeVariable) throws Throwable{
+	public static Field getFieldofClass(Class<?> theClass,String initializeVariable) throws Throwable{
 
 		Field privateField = null;
 
 		Field[] fields = theClass.getDeclaredFields();
 
 		for(Field field:fields){
-			if(Modifier.isPrivate(field.getModifiers())){
+			if(field.getName().contains(initializeVariable)){
+				privateField=field;
+				break;
+
+			}
+			/*if(Modifier.isPrivate(field.getModifiers())){
 				if(field.getName().contains(initializeVariable)){
 					privateField=field;
 					break;
 
 				}
-			}
+			}*/
 		}
 		// System.out.println("List of private variables are "+privateField);
 		return privateField;
@@ -321,7 +326,7 @@ public class RefUtil {
 	public static String initPrivateVariableofClass(Class<?> theClass,String initializeVariable,Object newValue){
 		String flag="False";
 		try{
-			Field field= getPrivateFieldofClass(theClass, initializeVariable);
+			Field field= getFieldofClass(theClass, initializeVariable);
 			setPrivateVariable(field, newValue);
 			flag="True";
 		}catch (Throwable t){
