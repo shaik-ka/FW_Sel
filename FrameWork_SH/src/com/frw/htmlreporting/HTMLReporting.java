@@ -15,7 +15,6 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 
@@ -23,7 +22,7 @@ import com.frw.base.Base;
 import com.frw.util.CaptureScreenUtil;
 import com.frw.util.DateUtil;
 import com.frw.util.FileUtil;
-import com.thoughtworks.selenium.webdriven.commands.CaptureScreenshotToString;
+//import com.thoughtworks.selenium.webdriven.commands.CaptureScreenshotToString;
 
 
 public class HTMLReporting extends Base{
@@ -692,10 +691,14 @@ public class HTMLReporting extends Base{
 			contentBuilder.replace(cnt1,cnt1+replace_totalScenarioExecuted.length(),String.valueOf(map_scenarios.keySet().size()));			   
 			//int  TotalExecuted=passCount+failCount;
 						
-			Set<String> failTCs=map_failTC.keySet();
+		/*	Set<String> failTCs=map_failTC.keySet();
 			map_passTC.keySet().removeAll(failTCs);
 			int totalPass=map_passTC.keySet().size();
 			int totalFail=map_failTC.keySet().size();
+			int  TotalExecuted=totalPass+totalFail;*/
+			
+			int totalPass=passCount;
+			int totalFail=failCount;
 			int  TotalExecuted=totalPass+totalFail;
 			
 			
