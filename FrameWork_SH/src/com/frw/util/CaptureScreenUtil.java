@@ -16,7 +16,9 @@ import org.testng.Reporter;
 
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+import ru.yandex.qatools.ashot.shooting.ScalingDecorator;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategy;
+import ru.yandex.qatools.ashot.shooting.SimpleShootingStrategy;
 
 
 public class CaptureScreenUtil {
@@ -86,8 +88,10 @@ public class CaptureScreenUtil {
 
 	public void TakeScreenshotLink_Ashot(WebDriver driver,String format,String failureImageFileName) { 
 		try { 
-			WebDriver augmentedDriver = new Augmenter().augment(driver);
-			Screenshot scr=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(augmentedDriver);
+			//WebDriver augmentedDriver = new Augmenter().augment(driver);
+			//Screenshot scr=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(augmentedDriver);
+			ShootingStrategy dpr2Strategy = new ScalingDecorator(new SimpleShootingStrategy()).withDpr(2);
+			Screenshot scr=new AShot().shootingStrategy(dpr2Strategy).takeScreenshot(driver);
 			ImageIO.write(scr.getImage(), format, new File(failureImageFileName));
 			WaitUtil.pause(200L);			
 		} 
@@ -96,7 +100,7 @@ public class CaptureScreenUtil {
 		} 
 	}
 	public void TakeScreenshotLink_robo(String format,String failureImageFileName) { 
-		RoboUtil.captureScreenshot(format, failureImageFileName);			
+		RoboUtil.captureScreenshot(format, failureImageFileName);
 	}
 	
 }
