@@ -298,5 +298,84 @@ public class TestUtil extends Base{
 			_objects_objectType=null;
 			_objects_locator=null;
 		}
+		
+		public static Object[][] fetchtestData(String sheetName,Xls_Reader xls,String suiteMode){
+			String runmode=Constants_FRMWRK.RUNMODE_YES_FLAG;
+			
+			initializeSuiteMode(suiteMode);
 
+			if (!xls.isSheetExist(sheetName)){
+				xls=null;
+				Object data[][]=new Object[1][1];
+				data[0][0]="No parameters Test";
+				//return new Object[1][0];
+				return data;
+			}
+
+			
+
+			int rows=xls.getRowCount(sheetName);
+			int cols=xls.getColumnCount(sheetName);
+			
+			int validTestData_rows=validRowsFromSheet(sheetName, xls);
+
+			// extract data
+			//********************************************************************************
+			Object data[][]=new Object[validTestData_rows][1];
+			Hashtable<String,String>table=null;
+			int index=0;
+
+			
+			for (int rowNum=2;rowNum<=rows;rowNum++){
+
+				table=new Hashtable<String,String>();
+				
+				if(!SuiteMode.equalsIgnoreCase("Regression")){
+					runmode=xls.getCellData(sheetName, SuiteMode+" "+Constants_FRMWRK.TC_SHEET_RUNMODE_COLUMN, rowNum);
+				}
+				if(runmode.equalsIgnoreCase(Constants_FRMWRK.RUNMODE_YES_FLAG)){
+					for (int colNum=0;colNum<cols;colNum++){
+
+						String key=xls.getCellData(sheetName, colNum, 1);
+						String value=xls.getCellData(sheetName, colNum, rowNum);
+						table.put(key, value);
+
+						//System.out.print(value+"----");
+					}
+					data[index][0]=table;
+					index++;
+				}				
+			}
+
+
+			return data;
+		}	
+		
+
+		
+		
+		private static int validRowsFromSheet(String sheetName,Xls_Reader xls){
+			int valid_testdata_rows=0;
+			String runmode=Constants_FRMWRK.RUNMODE_YES_FLAG;
+			
+			int rows=xls.getRowCount(sheetName);
+					
+			for (int rowNum=2;rowNum<=rows;rowNum++){				
+				if(SuiteMode.equalsIgnoreCase("Regression")){
+					valid_testdata_rows=rows;
+					return valid_testdata_rows;
+				}
+				if(!SuiteMode.equalsIgnoreCase("Regression")){
+					runmode=xls.getCellData(sheetName, SuiteMode+" "+Constants_FRMWRK.TC_SHEET_RUNMODE_COLUMN, rowNum);
+				}
+				
+				if(runmode.equalsIgnoreCase(Constants_FRMWRK.RUNMODE_YES_FLAG)){
+					valid_testdata_rows++;
+					
+				}				
+			}
+			
+			return valid_testdata_rows;
+			
+		}
 }
