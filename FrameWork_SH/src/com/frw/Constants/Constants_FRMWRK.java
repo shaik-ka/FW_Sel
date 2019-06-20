@@ -13,6 +13,8 @@ public class Constants_FRMWRK {
 	public static final String TC_SHEET_TCID_COLUMN="TCID";
 	public static final String RUNMODE_YES_FLAG="Y";
 	
+	public static final String TD_COLUMN="TSID";
+	
 	// find by 
 	public static final String FindElement="findElement";
 	public static final String FindElementByID="id";
