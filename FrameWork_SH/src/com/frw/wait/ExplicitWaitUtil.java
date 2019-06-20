@@ -20,18 +20,28 @@ import com.frw.util.ByLocator;
 import com.frw.util.WaitUtil;
 
 public class ExplicitWaitUtil extends Base{
+	
 	/**
 	 * Waits for the element to be visible for the required seconds
 	 * @param objectlocatorType
 	 * @param objectlocator
 	 * @param waitSeconds
 	 * @return
-	 * @throws Throwable 
-	 */
+	 * @throws Throwable 							2018
+	 */ 
 	public static  WebElement waitForElement(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) throws Throwable {
 
 		WebElement field=null;	
 		field=waitForElement_logic(ExpCondition.VISIBILITY,driver,objectlocatorType,objectlocator, waitSeconds );
+		if(field!=null){			
+			try{
+				field.getLocation();
+			}catch(StaleElementReferenceException st){
+				waitStalenessOfElement(driver, field, waitSeconds+20);
+			}
+			
+		}
+
 		//waitForStaleOf(field);
 		/* commented on Jun 2 2014
 	    log("Next verify stale..");
@@ -39,6 +49,25 @@ public class ExplicitWaitUtil extends Base{
 
 		return field;
 	} 
+	/**
+	 * Waits for the element to be visible for the required seconds
+	 * @param objectlocatorType
+	 * @param objectlocator
+	 * @param waitSeconds
+	 * @return
+	 * @throws Throwable 
+	 *//*
+	public static  WebElement waitForElement(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds ) throws Throwable {
+
+		WebElement field=null;	
+		field=waitForElement_logic(ExpCondition.VISIBILITY,driver,objectlocatorType,objectlocator, waitSeconds );
+		//waitForStaleOf(field);
+		 commented on Jun 2 2014
+	    log("Next verify stale..");
+	    stal(field);
+
+		return field;
+	} */
 
 	/**
 	 * Waits for the element to be present for the required seconds
@@ -266,8 +295,8 @@ public class ExplicitWaitUtil extends Base{
 
 		return element;
 	} 
-	
-	
+
+
 	/**
 	 * Waits for the elements to be in <expectedCondition> for the required seconds
 	 * @author Khaleel
@@ -307,7 +336,7 @@ public class ExplicitWaitUtil extends Base{
 		return elements;
 	} 
 
-	
+
 	/**
 	 * Retrives the visible elements from the given locator
 	 * @author Khaleel
@@ -380,18 +409,18 @@ public class ExplicitWaitUtil extends Base{
 
 		return element;
 	}	
-/**
- * Find a Radio button from the Radio Group with attribute(By Presence of Elements)
- * @author Khaleel
- * @date Aug 16 2016
- * @param driver
- * @param objectlocatorType
- * @param objectlocator
- * @param radioButton
- * @param attributeName
- * @param waitSeconds
- * @return
- */
+	/**
+	 * Find a Radio button from the Radio Group with attribute(By Presence of Elements)
+	 * @author Khaleel
+	 * @date Aug 16 2016
+	 * @param driver
+	 * @param objectlocatorType
+	 * @param objectlocator
+	 * @param radioButton
+	 * @param attributeName
+	 * @param waitSeconds
+	 * @return
+	 */
 
 	public static WebElement fetchRadiobuttonFromGroup(WebDriver driver,String objectlocatorType, String objectlocator,String radioButton,ExpCondition expectedCondition,String attributeName,int waitSeconds)
 	{
@@ -488,4 +517,299 @@ public class ExplicitWaitUtil extends Base{
 
 		return visible_elements;
 	}
+	/**
+	 * Get the list of enabled elements by excluding the elements with disabled attribute
+	 * @param driver
+	 * @param objectlocatorType
+	 * @param objectlocator
+	 * @param waitSeconds
+	 * @return
+	 */
+	public static List<WebElement> getEnabledElementsList(WebDriver driver, String objectlocatorType,String objectlocator,int waitSeconds){
+		int count=0;
+
+		List<WebElement>searchElements=waitForPresenceOfElements(driver, objectlocatorType, objectlocator, waitSeconds);
+		List<WebElement> enable_elements=new ArrayList<WebElement>();
+
+
+		if(searchElements.size()!=0){
+
+			for(WebElement element: searchElements){
+				try{
+					String isDisabled = element.getAttribute("disabled");
+					if (isDisabled==null || !isDisabled.equals("true")|| isDisabled.isEmpty()){
+						enable_elements.add(element);	
+						System.out.println("Element: Enabled");
+					}else{
+						System.out.println("View link: Disabled");
+					}					
+				}catch(StaleElementReferenceException stl){
+					logsObj.log("visibleElementsList:Element "+objectlocator+" is stale so recovering again and counter-"+count);	
+					WaitUtil.pause(1);
+					count=count+1;
+					if(count<=5){
+						enable_elements=getEnabledElementsList(driver, objectlocatorType, objectlocator,waitSeconds);
+					}
+				}
+
+			}
+		}
+
+		return enable_elements;
+	}
+	
+	
+	//************************************
+	/**
+	 * @author ShaikK
+	 * @date Aug 3 2017
+	 * @param driver
+	 * @param element
+	 * @param waitSeconds
+	 * @return
+	 */
+	public static  boolean waitStalenessOfElement(WebDriver driver,WebElement element, Integer waitSeconds ) {
+
+		boolean  flag=Constants_FRMWRK.FalseB;
+		Long wait =Long.valueOf(Integer.valueOf(waitSeconds));		
+		WebDriverWait waitdriver=new WebDriverWait(driver, wait);
+
+		try{
+			logsObj.log("waitStalenessOfElement-Turned off Implicit wait..");
+			ImplicitWaitUtil.turnOffImplicitWait(driver);
+			try{
+				logsObj.log("waitStalenessOfElement:-Start..");
+				flag = waitdriver.until(ExpectedConditions.stalenessOf(element));
+				logsObj.log("waitStalenessOfElement:-Able to wait for element to be Staleness..");
+			}catch(Throwable t){
+				logsObj.logError("waitStalenessOfElement:-After binding By element , Unable to wait more for the Staleness due to error->",t);
+			}
+
+		}catch(Throwable t){
+			logsObj.logError("waitStalenessOfElement:-Unable to bind the By element for due to error->",t);
+		}finally{
+			ImplicitWaitUtil.turnOnImplicitWait(driver);
+			logsObj.log("waitStalenessOfElement-Reverted back Implicit wait..");
+		}
+
+		return flag;
+	} 
+
+
+	public static  boolean waitTitle(WebDriver driver,Integer waitSeconds,String title ) {
+
+		boolean  flag=Constants_FRMWRK.FalseB;
+		Long wait =Long.valueOf(Integer.valueOf(waitSeconds));		
+		WebDriverWait waitdriver=new WebDriverWait(driver, wait);
+
+		try{
+			logsObj.log("waitStalenessOfElement-Turned off Implicit wait..");
+			ImplicitWaitUtil.turnOffImplicitWait(driver);
+			try{
+				logsObj.log("waitStalenessOfElement:-Start..");
+				flag = waitdriver.until(ExpectedConditions.titleIs(title));
+				logsObj.log("waitStalenessOfElement:-Able to wait for element to be Staleness..");
+			}catch(Throwable t){
+				logsObj.logError("waitStalenessOfElement:-After binding By element , Unable to wait more for the Staleness due to error->",t);
+			}
+
+		}catch(Throwable t){
+			logsObj.logError("waitStalenessOfElement:-Unable to bind the By element for due to error->",t);
+		}finally{
+			ImplicitWaitUtil.turnOnImplicitWait(driver);
+			logsObj.log("waitStalenessOfElement-Reverted back Implicit wait..");
+		}
+
+		return flag;
+	} 
+
+	public static  boolean waitTitleContains(WebDriver driver,Integer waitSeconds,String title ) {
+
+		boolean  flag=Constants_FRMWRK.FalseB;
+		Long wait =Long.valueOf(Integer.valueOf(waitSeconds));		
+		WebDriverWait waitdriver=new WebDriverWait(driver, wait);
+
+		try{
+			logsObj.log("waitStalenessOfElement-Turned off Implicit wait..");
+			ImplicitWaitUtil.turnOffImplicitWait(driver);
+			try{
+				logsObj.log("waitStalenessOfElement:-Start..");
+				flag = waitdriver.until(ExpectedConditions.titleContains(title));
+				logsObj.log("waitStalenessOfElement:-Able to wait for element to be Staleness..");
+			}catch(Throwable t){
+				logsObj.logError("waitStalenessOfElement:-After binding By element , Unable to wait more for the Staleness due to error->",t);
+			}
+
+		}catch(Throwable t){
+			logsObj.logError("waitStalenessOfElement:-Unable to bind the By element for due to error->",t);
+		}finally{
+			ImplicitWaitUtil.turnOnImplicitWait(driver);
+			logsObj.log("waitStalenessOfElement-Reverted back Implicit wait..");
+		}
+
+		return flag;
+	} 
+	
+	public static List<WebElement> waitForVisibilityOfElements_2(WebDriver driver,String objectlocatorType,String objectlocator, Integer waitSeconds){
+		int counter =1;
+		List<WebElement> rows_previous =null;
+		List<WebElement> rows_current = null;
+		logsObj.log("Inside waitUntilAllVisible");
+
+		while (counter <=10){			
+			rows_previous = waitForVisibilityOfElements(driver, objectlocatorType, objectlocator, waitSeconds); 
+			WaitUtil.pause(1);
+			rows_current = waitForVisibilityOfElements(driver, objectlocatorType, objectlocator, waitSeconds/2); 
+			if(rows_previous==null || rows_current== null){
+				return rows_current;
+			}
+			if(rows_previous.size()==rows_current.size()){
+				logsObj.log("Visibility of elements Previous-Current:"+rows_previous.size()+"-"+rows_current.size());
+				if(rows_current.size()!=0 ){
+					break;
+				}
+				
+			}
+			counter++;
+		}
+
+		if(counter>10){
+			logsObj.log("All elements are not Visibility  of elements yet after 10 secs Previous-Current"+rows_previous.size()+"-"+rows_current.size());
+		}
+
+		return rows_current;
+
+	}
+	
+	
+	public static  Integer waitfornumberOfElementsToBeMoreThan(WebDriver driver,String objectlocatorType,String objectlocator,Integer numberOfElementsToBeMoreThan, Integer waitSeconds ) {
+		Integer  flag=0;
+		By Bylocator=null;
+		List< WebElement> elements=null;
+		
+		Long wait =Long.valueOf(Integer.valueOf(waitSeconds));		
+		WebDriverWait waitdriver=new WebDriverWait(driver, wait);
+
+		try{
+			logsObj.log("waitStalenessOfElement-Turned off Implicit wait..");
+			ImplicitWaitUtil.turnOffImplicitWait(driver);
+			Bylocator=ByLocator.fetch_ByLocator(driver, objectlocatorType, objectlocator);
+			
+			try{
+				logsObj.log("waitStalenessOfElement:-Start..");
+				elements = waitdriver.until(ExpectedConditions.numberOfElementsToBeMoreThan(Bylocator, numberOfElementsToBeMoreThan));
+				logsObj.log("waitStalenessOfElement:-Able to wait for element to be Staleness..");
+			}catch(Throwable t){
+				logsObj.logError("waitStalenessOfElement:-After binding By element , Unable to wait more for the Staleness due to error->",t);
+			}
+
+		}catch(Throwable t){
+			logsObj.logError("waitStalenessOfElement:-Unable to bind the By element for due to error->",t);
+		}finally{
+			ImplicitWaitUtil.turnOnImplicitWait(driver);
+			logsObj.log("waitStalenessOfElement-Reverted back Implicit wait..");
+		}
+
+		if(elements!=null){
+			flag=elements.size();
+		}
+		return flag;
+	} 
+	
+	
+	public static  Integer waitfornumberOfElementsToBeLessThan(WebDriver driver,String objectlocatorType,String objectlocator,Integer numberOfElementsToBeMoreThan, Integer waitSeconds ) {
+		Integer  flag=0;
+		By Bylocator=null;
+		List< WebElement> elements=null;
+		
+		Long wait =Long.valueOf(Integer.valueOf(waitSeconds));		
+		WebDriverWait waitdriver=new WebDriverWait(driver, wait);
+
+		try{
+			logsObj.log("waitStalenessOfElement-Turned off Implicit wait..");
+			ImplicitWaitUtil.turnOffImplicitWait(driver);
+			Bylocator=ByLocator.fetch_ByLocator(driver, objectlocatorType, objectlocator);
+			
+			try{
+				logsObj.log("waitStalenessOfElement:-Start..");
+				elements = waitdriver.until(ExpectedConditions.numberOfElementsToBeLessThan(Bylocator, numberOfElementsToBeMoreThan));
+				logsObj.log("waitStalenessOfElement:-Able to wait for element to be Staleness..");
+			}catch(Throwable t){
+				logsObj.logError("waitStalenessOfElement:-After binding By element , Unable to wait more for the Staleness due to error->",t);
+			}
+
+		}catch(Throwable t){
+			logsObj.logError("waitStalenessOfElement:-Unable to bind the By element for due to error->",t);
+		}finally{
+			ImplicitWaitUtil.turnOnImplicitWait(driver);
+			logsObj.log("waitStalenessOfElement-Reverted back Implicit wait..");
+		}
+
+		if(elements!=null){
+			flag=elements.size();
+		}
+		return flag;
+	} 
+	
+	public static  Integer waitfornumberOfElementsToBe(WebDriver driver,String objectlocatorType,String objectlocator,Integer numberOfElementsToBeMoreThan, Integer waitSeconds ) {
+		Integer  flag=0;
+		By Bylocator=null;
+		List< WebElement> elements=null;
+		
+		Long wait =Long.valueOf(Integer.valueOf(waitSeconds));		
+		WebDriverWait waitdriver=new WebDriverWait(driver, wait);
+
+		try{
+			logsObj.log("waitStalenessOfElement-Turned off Implicit wait..");
+			ImplicitWaitUtil.turnOffImplicitWait(driver);
+			Bylocator=ByLocator.fetch_ByLocator(driver, objectlocatorType, objectlocator);
+			
+			try{
+				logsObj.log("waitStalenessOfElement:-Start..");
+				elements = waitdriver.until(ExpectedConditions.numberOfElementsToBe(Bylocator, numberOfElementsToBeMoreThan));
+				logsObj.log("waitStalenessOfElement:-Able to wait for element to be Staleness..");
+			}catch(Throwable t){
+				logsObj.logError("waitStalenessOfElement:-After binding By element , Unable to wait more for the Staleness due to error->",t);
+			}
+
+		}catch(Throwable t){
+			logsObj.logError("waitStalenessOfElement:-Unable to bind the By element for due to error->",t);
+		}finally{
+			ImplicitWaitUtil.turnOnImplicitWait(driver);
+			logsObj.log("waitStalenessOfElement-Reverted back Implicit wait..");
+		}
+
+		if(elements!=null){
+			flag=elements.size();
+		}
+		return flag;
+	} 
+	
+	
+	public static  boolean waitforNumberOfWindows(WebDriver driver,Integer waitSeconds,int expectedNumberOfWindows ) {
+
+		boolean  flag=Constants_FRMWRK.FalseB;
+		Long wait =Long.valueOf(Integer.valueOf(waitSeconds));		
+		WebDriverWait waitdriver=new WebDriverWait(driver, wait);
+
+		try{
+			logsObj.log("waitStalenessOfElement-Turned off Implicit wait..");
+			ImplicitWaitUtil.turnOffImplicitWait(driver);
+			try{
+				logsObj.log("waitStalenessOfElement:-Start..");
+				flag = waitdriver.until(ExpectedConditions.numberOfWindowsToBe(expectedNumberOfWindows));
+				logsObj.log("waitStalenessOfElement:-Able to wait for element to be Staleness..");
+			}catch(Throwable t){
+				logsObj.logError("waitStalenessOfElement:-After binding By element , Unable to wait more for the Staleness due to error->",t);
+			}
+
+		}catch(Throwable t){
+			logsObj.logError("waitStalenessOfElement:-Unable to bind the By element for due to error->",t);
+		}finally{
+			ImplicitWaitUtil.turnOnImplicitWait(driver);
+			logsObj.log("waitStalenessOfElement-Reverted back Implicit wait..");
+		}
+
+		return flag;
+	} 
 }
