@@ -57,9 +57,11 @@ public static  By fetch_ByLocator(WebDriver driver,String objectlocatorType,Stri
 
 		WebDriverWait syncWait = new WebDriverWait(driver, waitSeconds);
 		syncWait.withTimeout(waitSeconds, TimeUnit.SECONDS);
-		syncWait.pollingEvery(500, TimeUnit.MILLISECONDS);
+		//syncWait.pollingEvery(500, TimeUnit.MILLISECONDS);//commented on May 17 as clicking element before complete load
+		syncWait.pollingEvery(5, TimeUnit.SECONDS);
 		syncWait.ignoring( StaleElementReferenceException.class );
-		syncWait.ignoring(NoSuchElementException.class);				
+		syncWait.ignoring(NoSuchElementException.class);
+		//syncWait.ignoring(NullPointerException.class); //may 18 2017 -just checking purpose
 		WebElement we = null;
 		boolean found=false;
 		try {
@@ -104,7 +106,8 @@ public static  By fetch_ByLocator(WebDriver driver,String objectlocatorType,Stri
 
 		WebDriverWait syncWait = new WebDriverWait(driver, waitSeconds);
 		syncWait.withTimeout(waitSeconds, TimeUnit.SECONDS);
-		syncWait.pollingEvery(500, TimeUnit.MILLISECONDS);
+		//syncWait.pollingEvery(500, TimeUnit.MILLISECONDS);//commented on May 17 as clicking element before complete load
+		syncWait.pollingEvery(5, TimeUnit.SECONDS);
 		syncWait.ignoring( StaleElementReferenceException.class );
 		syncWait.ignoring(NoSuchElementException.class);				
 		List<WebElement> we = null;
