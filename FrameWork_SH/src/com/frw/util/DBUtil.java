@@ -94,9 +94,7 @@ public class DBUtil extends Base{
 		Object[][] data = new Object[row][1];
 		Hashtable<String, String> table  = new Hashtable<String, String>();
 		int col= 0;
-		@SuppressWarnings("unused")
-		int rowIndex=0;
-
+	
 		conObj=DBConnectionObject();
 
 		// access data 
