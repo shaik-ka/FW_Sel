@@ -18,18 +18,14 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellStyle;
-import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.openqa.selenium.WebDriver;
 
 import com.frw.base.Base;
 import com.frw.util.CaptureScreenUtil;
 import com.frw.util.DateUtil;
 import com.frw.util.ExcelStyleUtil;
-import com.frw.util.ExcelUtil;
 import com.frw.util.WaitUtil;
 
 
