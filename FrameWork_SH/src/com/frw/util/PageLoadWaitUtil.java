@@ -96,7 +96,7 @@ public class PageLoadWaitUtil extends Base{
 		System.out.println("Page Load Status: " + str);
 		while(!str.equals("complete")){
 			try {
-				Thread.currentThread().sleep(2000);
+				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -274,6 +274,35 @@ public class PageLoadWaitUtil extends Base{
 		logsObj.log("-------------");
 		System.out.println("----------------------");
 	}
+	
+	
+	public static void waitForPagetoLoadCompletely(WebDriver driver,Integer waitSeconds) {
+		ExpectedCondition<Boolean> expectation = new
+				ExpectedCondition<Boolean>() {
+			public Boolean apply(WebDriver driver) {
+				return ((JavascriptExecutor) driver).executeScript("return document.readyState").toString().equals("complete");
+			}
+		};
+		try {
+			logsObj.log("waitForPageLoaded-Turned off Implicit wait..");
+			ImplicitWaitUtil.turnOffImplicitWait(driver);
+			Thread.sleep(1000);
+			WebDriverWait wait = new WebDriverWait(driver, waitSeconds);
+			wait.until(expectation);
+			System.out.println("Page Loaded Completely....");			
+		} catch (Throwable error) {
+			System.out.println("Timeout waiting for Page Load Request to complete.");
+		}finally{
+			ImplicitWaitUtil.turnOnImplicitWait(driver);
+			logsObj.log("waitForPageLoaded-Reverted back Implicit wait..");
+		}
+	}
+	
+	
+	private static String getCurrentPageLoadStatus(WebDriver driver){
+		return ((JavascriptExecutor) driver).executeScript("return document.readyState").toString();
+	}
+
 }
 
 
