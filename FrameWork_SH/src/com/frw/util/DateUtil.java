@@ -101,6 +101,29 @@ public class DateUtil extends Base {
 		incrementedDate = df.format(cal.getTime()); 
 		return incrementedDate;
 	}
+	/**
+	 * Increments the given date format
+	 * @param dateFormat
+	 * @param dateToIncrement
+	 * @param incrementer
+	 * @return
+	 */
+	public static String dateIncremterOrDecrementer(String dateFormat,String dateToIncrement,int incrementer){
+		String incrementedDate="";   
+		SimpleDateFormat df = new SimpleDateFormat(dateFormat);   
+		Calendar cal = Calendar.getInstance();   
+		try { 
+			cal.setTime(df.parse(dateToIncrement)); 
+		} catch (ParseException e)   
+		{ 
+			//log("Unable to increment the Date:"+dateToIncrement+"Due to Error-->"+e);
+			logsObj.logError("Unable to increment the Date:"+dateToIncrement+" due to Error-->",e);
+		}   
+
+		cal.add(Calendar.DAY_OF_MONTH, incrementer); // number of days to add   
+		incrementedDate = df.format(cal.getTime()); 
+		return incrementedDate;
+	}
 
 
 	/**
