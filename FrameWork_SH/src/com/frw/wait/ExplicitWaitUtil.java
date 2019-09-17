@@ -204,6 +204,36 @@ public class ExplicitWaitUtil extends Base{
 
 		return flag;
 	} 
+	
+	public static  boolean waitUntilInvisibilityOfElementText(WebDriver driver,String objectlocatorType,String objectlocator,String text, Integer waitSeconds ) {
+
+		boolean  flag=Constants_FRMWRK.FalseB;
+		By Bylocator=null;
+
+		Long wait =Long.valueOf(Integer.valueOf(waitSeconds));
+
+		try{
+			logsObj.log("waitUntilInvisibilityOfElement-Turned off Implicit wait..");
+			ImplicitWaitUtil.turnOffImplicitWait(driver);
+			Bylocator=ByLocator.fetch_ByLocator(driver, objectlocatorType, objectlocator);
+
+			try{
+				logsObj.log("waitUntilInvisibilityOfElement:-Start.."+objectlocator);
+				flag = new WebDriverWait(driver, (long)(wait)).until(ExpectedConditions.invisibilityOfElementWithText(Bylocator, text));
+				logsObj.log("waitUntilInvisibilityOfElement:-Able to wait for element to be invisible.."+objectlocator);
+			}catch(Throwable t){
+				logsObj.logError("waitUntilInvisibilityOfElement:-After binding By element , Unable to wait more for the invisiblity of  "+objectlocator+" due to error->",t);
+			}
+
+		}catch(Throwable t){
+			logsObj.logError("waitUntilInvisibilityOfElement:-Unable to bind the By element for "+objectlocator+" due to error->",t);
+		}finally{
+			ImplicitWaitUtil.turnOnImplicitWait(driver);
+			logsObj.log("waitUntilInvisibilityOfElement-Reverted back Implicit wait..");
+		}
+
+		return flag;
+	}
 
 	/*public static List<WebElement> expectedVisibleElements(WebDriver driver,List<WebElement> elements,Integer waitForSeconds){
 		List<WebElement>elements_visible=null;
