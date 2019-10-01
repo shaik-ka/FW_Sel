@@ -655,7 +655,7 @@ public class ExcelReporting extends Base{
 					captureObj.TakeScreenshotLink_robo(screenFormat, failureImageFileNamePath);
 				}
 				else if(captureScreenWith.equalsIgnoreCase("ASHOT")){
-					captureObj.TakeScreenshotLink_Ashot(driver, screenFormat, failureImageFileNamePath);
+					captureObj.TakeScreenshotLink_Ashot_2(driver, screenFormat, failureImageFileNamePath);
 				}
 				else{
 					//commonFunctions.TakeScreenshotLinkforRemoteDriver(failureImageFileNamePath,resultStep);
