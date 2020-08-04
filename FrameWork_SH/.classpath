@@ -20,7 +20,6 @@
 	<classpathentry kind="lib" path="lib/Sel Related/libs/commons-collections-3.2.1.jar"/>
 	<classpathentry kind="lib" path="lib/Sel Related/libs/commons-exec-1.1.jar"/>
 	<classpathentry kind="lib" path="lib/Sel Related/libs/commons-jxpath-1.3.jar"/>
-	<classpathentry kind="lib" path="lib/Sel Related/libs/guava-15.0.jar"/>
 	<classpathentry kind="lib" path="lib/Sel Related/libs/hamcrest-core-1.3.jar"/>
 	<classpathentry kind="lib" path="lib/Sel Related/libs/hamcrest-library-1.3.jar"/>
 	<classpathentry kind="lib" path="lib/Sel Related/libs/ini4j-0.5.2.jar"/>
@@ -56,8 +55,6 @@
 	<classpathentry kind="lib" path="lib/Sel Related/libs/nekohtml-1.9.21.jar"/>
 	<classpathentry kind="lib" path="lib/Sel Related/libs/commons-io-2.4.jar"/>
 	<classpathentry kind="lib" path="lib/Sel Related/libs/phantomjsdriver-1.1.0.jar"/>
-	<classpathentry kind="lib" path="lib/Sel Related/selenium-java-2.43.1.jar"/>
-	<classpathentry kind="lib" path="lib/Sel Related/selenium-java-2.43.1-srcs.jar"/>
 	<classpathentry kind="lib" path="lib/poi related/curvesapi-1.03.jar"/>
 	<classpathentry kind="lib" path="lib/poi related/poi-3.14-20160307.jar"/>
 	<classpathentry kind="lib" path="lib/poi related/poi-excelant-3.14-20160307.jar"/>
@@ -65,6 +62,7 @@
 	<classpathentry kind="lib" path="lib/poi related/poi-ooxml-schemas-3.14-20160307.jar"/>
 	<classpathentry kind="lib" path="lib/poi related/poi-scratchpad-3.14-20160307.jar"/>
 	<classpathentry kind="lib" path="lib/poi related/xmlbeans-2.6.0.jar"/>
-	<classpathentry kind="lib" path="lib/AshotRelated/ashot-1.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/Sel Related/selenium-server-standalone-3.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/AshotRelated/ashot-1.5.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
