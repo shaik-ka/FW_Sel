@@ -80,27 +80,42 @@ public class HTMLReporting extends Base{
 	String style_width25="width:25%";
 	String style_width15="width:15%";
 
-	String graph_script="<script type=\"text/javascript\" src=\"csssheets/jsapi.js\"></script> "+
-			"<script type=\"text/javascript\" src=\"jquery-latest.js\"></script>"+
+	String graph_script="<script type=\"text/javascript\" src=\"https://www.gstatic.com/charts/loader.js\"></script> "+
+			"<script type=\"text/javascript\" src=\"csssheets/jsapi.js\"></script>"+
+			"<script type=\"text/javascript\" src=\"csssheets/jquery-latest.js\"></script>"+
 			"<script type=\"text/javascript\" src=\"csssheets/jquery-1.11.3.min.js\"></script>"+
 			"<script type=\"text/javascript\">"+
-			" google.load(\"visualization\", \"1\", {packages:[\"corechart\"]});"+
-			" google.setOnLoadCallback(drawChart);"+	
-			" function drawChart() {"+
+		//	" google.load(\"visualization\", \"1\", {packages:[\"corechart\"]});"+
+		//  " google.setOnLoadCallback(drawChart);"+
+			/*	" function drawChart() {"+
 			" var data = google.visualization.arrayToDataTable(["+
 			" ['Tests', 'Executed'],"+
 			" ['Pass',     "+replace_graph_testsPassed+"],"+
 			" ['Fail',     "+replace_graph_testsFailed+"]"+           
 			" ]);"+
-
-      					" var options = { "+
-      					" title: 'Test Execution Percentage',"+
-      					" is3D: true,"+
-      					" };"+
-
-      					" var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));"+
+		*/
+			// Load the Visualization API and the piechart package.
+			" google.charts.load(\"current\", {packages:[\"corechart\"]});"+
+			// Set a callback to run when the Google Visualization API is loaded.
+			" google.charts.setOnLoadCallback(drawChart);"+	
+			// Create the data table.
+			" function drawChart() {"+
+			"var data = google.visualization.arrayToDataTable(["+
+			                                                 " ['Tests', 'Executed'],"+
+			                                                 " ['Pass',     "+replace_graph_testsPassed+"],"+
+			                                                 " ['Fail',      "+replace_graph_testsFailed+"]"+
+			                                                 
+			                                               " ]);"+	
+			
+			// Set chart options
+		"var options ={'title':'Test Execution Percentage','width':380,'height':180};"+	
+		// Instantiate and draw our chart, passing in some options.
+      		
+      					" var chart = new google.visualization.PieChart(document.getElementById('chart_div'));"+
       					" chart.draw(data, options);"+
       					" } "+
+      					
+      					
       					" </script> "+
       					"<script> "+
       					"$(document).ready(function(){ "+
@@ -348,7 +363,7 @@ public class HTMLReporting extends Base{
 			bw.append("<td>"+replace_duration+"</td>");
 			bw.append("</tr>");
 			bw.append("</table>");
-			bw.append("<div id=\"piechart_3d\" style=\"width: 36%; height: 140px;\" align =\"left\" ></div>");
+			bw.append("<div id=\"chart_div\" style=\"width: 36%; height: 140px;\" align =\"left\" ></div>");
 			bw.append("<div id=\"flip\">Click to Search</div>");
 			bw.append("<div id=\"panel\">");
 			bw.append("<div  class=\"filters\"  align=\"left\" id=\"rcorners2\">");
